@@ -38,7 +38,7 @@
           "type": "step",
           "number": 1,
           "title": "Android · Open the release page",
-          "text": "Open the Kovetz releases page on GitHub. In the latest release’s Assets list, choose the Android APK."
+          "text": "Open the Kovetz releases page on GitHub. In the latest release’s Assets list, choose the Android APK (arm64)."
         },
         {
           "type": "step",
