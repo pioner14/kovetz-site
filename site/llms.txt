@@ -32,7 +32,7 @@ Kovetz is a free, open-source (MIT) app for people who use the JW Library app, i
 - Is Kovetz an official JW Library app? Kovetz is an independent program, not affiliated with JW Library or its developers.
 - Does Kovetz work on Android? Yes. There is an APK installer for Android (arm64), which fits almost all modern phones and tablets. Versions for Windows 10 and 11 and for Linux are available too.
 - Is this a replacement for JWLMerge? You can use it as an alternative. Its author says JWLMerge has been unmaintained since 2023 and does not cover the new JW Library database schema. Kovetz works with backups from older and newer versions and also exports your notes.
-- Who is Kovetz for? For anyone who uses JW Library: Jehovah's Witnesses, Bible students and other people who keep notes on more than one device.
+- Who is Kovetz for? For anyone who uses JW Library: Jehovah's Witnesses and interested people, as well as others who keep notes on more than one device.
 
 ## Вопросы и ответы (Русский)
 - Как объединить заметки JW Library с телефона и планшета? Сделайте резервную копию в JW Library на каждом устройстве, перенесите файлы .jwlibrary на одно устройство, добавьте их в Kovetz и нажмите «Объединить». Готовую копию восстановите в JW Library.
@@ -49,4 +49,4 @@ Kovetz is a free, open-source (MIT) app for people who use the JW Library app, i
 - Это официальная программа JW Library? Kovetz — независимая программа, которая не связана с JW Library и её разработчиками.
 - Работает ли Kovetz на Android? Да. Для Android есть установочный файл APK (arm64), он подходит почти всем современным телефонам и планшетам. Также есть версии для Windows 10 и 11 и для Linux.
 - Это замена JWLMerge? Да, это можно использовать как альтернативу. По словам автора JWLMerge, проект не поддерживается с 2023 года и не рассчитан на новую схему базы JW Library. Kovetz работает с копиями старых и новых версий и умеет, кроме объединения, экспортировать заметки.
-- Для кого Kovetz? Для всех, кто пользуется JW Library: Свидетелей Иеговы, студентов Библии и других людей, у которых заметки хранятся на нескольких устройствах.
+- Для кого Kovetz? Для всех, кто пользуется JW Library: Свидетелей Иеговы и интересующихся людей, у которых заметки хранятся на нескольких устройствах.
