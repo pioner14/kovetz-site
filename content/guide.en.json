@@ -55,38 +55,38 @@
         {
           "type": "step",
           "number": 4,
-          "title": "Windows · Download the ZIP",
-          "text": "On the Kovetz releases page on GitHub, choose the Windows ZIP. Find the downloaded file in your Downloads folder."
+          "title": "Windows · Download the installer",
+          "text": "On the Kovetz releases page on GitHub, choose the Windows installer. Find it in your Downloads folder and double-click it."
         },
         {
           "type": "step",
           "number": 5,
-          "title": "Windows · Extract the files",
-          "text": "Right-click the ZIP and choose “Extract All”. Open the folder that was created."
+          "title": "Windows · Install the app",
+          "text": "The installer is unsigned for now. If Windows shows a warning, click “More info”, then “Run anyway”. Follow the installer prompts."
         },
         {
           "type": "step",
           "number": 6,
           "title": "Windows · Start Kovetz",
-          "text": "Double-click “kovetz.exe” in that folder. Leave the other files beside it."
+          "text": "After installation, open the Start menu, find Kovetz and click its icon."
         },
         {
           "type": "step",
           "number": 7,
-          "title": "Linux · Download the archive",
-          "text": "On the Kovetz releases page on GitHub, choose the Linux archive. Its name ends in .tar.gz."
+          "title": "Linux · Download the AppImage",
+          "text": "On the Kovetz releases page on GitHub, choose the Linux file ending in .AppImage. Find it in your Downloads folder."
         },
         {
           "type": "step",
           "number": 8,
-          "title": "Linux · Unpack the archive",
-          "text": "In Downloads, right-click the archive. Choose “Extract Here” or a similar option."
+          "title": "Linux · Allow the file to run",
+          "text": "Right-click the downloaded file and open “Properties”. Look for “Allow executing file as program” or a similar setting and turn it on."
         },
         {
           "type": "step",
           "number": 9,
           "title": "Linux · Start Kovetz",
-          "text": "Open the extracted folder and then its “bundle” folder. Run “kovetz” and leave the “data” and “lib” folders beside it."
+          "text": "Close the properties window and double-click the AppImage to open Kovetz."
         },
         {
           "type": "step",
@@ -104,7 +104,7 @@
           "type": "step",
           "number": 12,
           "title": "Update · Open the new version",
-          "text": "On Android, open the new APK and confirm the update. On a computer, close the old app, unpack the new version into a different folder and run it from there."
+          "text": "On Android, open the new APK and confirm the update. On a computer, close Kovetz. On Windows, run the new installer. On Linux, allow the new AppImage to run and open it."
         }
       ]
     },

@@ -6,7 +6,11 @@ import 'guide_data.dart';
 
 const _escape = HtmlEscape(HtmlEscapeMode(escapeLtGt: true, escapeQuot: true));
 String h(String text) => _escape.convert(text);
-const _platforms = ['Android', 'Windows', 'Linux'];
+const _platforms = {
+  'Android': 'android-arm64.apk',
+  'Windows': 'windows-x64-setup.exe',
+  'Linux': 'linux-x86_64.AppImage',
+};
 const _stepImages = ['merge_files_two', 'merge_rules', 'export_format'];
 
 void main() {
@@ -41,9 +45,13 @@ class SiteBuilder {
 
   String get base => config['baseUrl']!.replaceFirst(RegExp(r'/+$'), '');
   String get name => config['name']!;
+  String get version => config['version']!;
   String get developer => config['developer']!;
   String get releases => config['releases']!;
   String get archive => releases.replaceFirst(RegExp(r'/latest/?$'), '');
+
+  String downloadUrl(String assetSuffix) =>
+      '$archive/download/v$version/kovetz-$version-$assetSuffix';
 
   File target(String path) => File('${output.path}/$path');
   void write(String path, String text) =>
@@ -403,9 +411,9 @@ class LocalePages {
           '@type': 'SoftwareApplication',
           'name': site.name,
           'description': copy['seo']['description'] as String,
-          'operatingSystem': _platforms.join(', '),
+          'operatingSystem': _platforms.keys.join(', '),
           'applicationCategory': 'UtilitiesApplication',
-          'softwareVersion': site.config['version']!,
+          'softwareVersion': site.version,
           'downloadUrl': site.releases,
           'offers': {'@type': 'Offer', 'price': 0, 'priceCurrency': 'EUR'},
           'author': {'@type': 'Person', 'name': site.developer},
@@ -512,12 +520,12 @@ ${header()}
   <section id="download" class="section">
     <div class="container">
       <h2>${t('download', 'title')}</h2>
-      <p class="version">${t('download', 'version')} <strong>${h(site.config['version']!)}</strong></p>
+      <p class="version">${t('download', 'version')} <strong>${h(site.version)}</strong></p>
       <div class="grid-three platforms">
-        ${_platforms.indexed.map((item) => '''
-        <a class="card platform" href="${h(site.releases)}">
-          ${icon(item.$2.toLowerCase())}
-          <span><strong>${item.$2}</strong><small>${h(copy['download']['formats'][item.$1] as String)}</small></span>
+        ${_platforms.entries.indexed.map((item) => '''
+        <a class="card platform" href="${h(site.downloadUrl(item.$2.value))}">
+          ${icon(item.$2.key.toLowerCase())}
+          <span><strong>${item.$2.key}</strong><small>${h(copy['download']['formats'][item.$1] as String)}</small></span>
           ${icon('download')}
         </a>''').join('\n')}
       </div>

@@ -78,7 +78,7 @@
   "download": {
     "title": "Скачать Kovetz",
     "version": "Версия",
-    "formats": ["APK для Android (arm64)", "Архив ZIP", "Архив TAR.GZ"],
+    "formats": ["APK для Android (arm64)", "Установщик Windows (EXE)", "Один файл AppImage"],
     "all": "Все версии на GitHub",
     "note": "Как разрешить установку из браузера на Android"
   },
