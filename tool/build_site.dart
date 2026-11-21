@@ -553,6 +553,11 @@ ${header()}
       ${faq.map((item) => '<details name="faq"><summary>${text(item, 'question')}</summary><p>${text(item, 'answer')}</p></details>').join('\n      ')}
     </div>
   </section>
+  <section id="name" class="section band">
+    <div class="container">
+      <h2>${t('name', 'title')}</h2><p>${t('name', 'text')}</p>
+    </div>
+  </section>
 </main>
 ${footer('../')}''',
     );

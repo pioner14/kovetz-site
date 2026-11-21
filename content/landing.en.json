@@ -88,6 +88,10 @@
     "coffee": "Buy me a coffee · €5",
     "custom": "Choose an amount"
   },
+  "name": {
+    "title": "Why “Kovetz”",
+    "text": "“Kovetz” (קוֹבֶץ) is Hebrew for “collection”, “compilation” and also “file”. It comes from a root meaning “to gather”, which is exactly what the app does: it gathers your notes from different devices into one backup."
+  },
   "faq": {
     "title": "Frequently asked questions",
     "items": [
