@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" fill="none">
+  <!-- Soft ambient backdrop shape -->
+  <ellipse cx="160" cy="196" rx="108" ry="16" fill="#D3E7DC" fill-opacity="0.6"/>
+  <!-- Back left notebook -->
+  <rect x="58" y="64" width="96" height="120" rx="16" transform="rotate(-8 58 64)" fill="#D3E7DC"/>
+  <!-- Back right notebook -->
+  <rect x="168" y="54" width="96" height="120" rx="16" transform="rotate(8 168 54)" fill="#BAEED6"/>
+  <!-- Main unified notebook -->
+  <rect x="104" y="48" width="112" height="140" rx="18" fill="#FFFFFF" stroke="#376754" stroke-width="3"/>
+  <rect x="124" y="80" width="72" height="8" rx="4" fill="#D3E7DC"/>
+  <rect x="124" y="100" width="52" height="8" rx="4" fill="#D3E7DC"/>
+  <!-- Bookmark ribbon -->
+  <path d="M180 48H200V92L190 83L180 92V48Z" fill="#8C5A1B"/>
+  <!-- Success badge -->
+  <circle cx="160" cy="146" r="22" fill="#376754"/>
+  <path d="M150 146L157 153L171 139" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

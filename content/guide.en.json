@@ -1,0 +1,692 @@
+{
+  "title": "Kovetz user guide",
+  "intro": "Begin with “Save your backups first”. Take it one step at a time. Your original files always stay as they were.",
+  "chapters": [
+    {
+      "id": "what",
+      "title": "What the app does",
+      "summary": "Kovetz helps you bring your JW Library records together in one place.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "You may have some notes on your phone and others on your tablet. Kovetz reads the saved copies from those devices and makes one new copy. It can bring together notes, tags, highlights, bookmarks, favourites, answers and playlists."
+        },
+        {
+          "type": "p",
+          "text": "You can also save notes as a file to read or in a folder for Obsidian. To put your records back into JW Library, restore the backup in JW Library itself."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use an Android phone or a Windows or Linux computer.",
+            "Merging needs at least two different JW Library backups. Saving notes needs only one backup with tagged notes.",
+            "Leave some free space for the new backup and its report."
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "You can work with saved backups offline. Kovetz does not replace JW Library or move downloaded publications, and it never changes your original files."
+        }
+      ]
+    },
+    {
+      "id": "install",
+      "title": "Install and update",
+      "summary": "Follow the steps for your phone or computer.",
+      "blocks": [
+        {
+          "type": "step",
+          "number": 1,
+          "title": "Android · Open the release page",
+          "text": "Open the Kovetz releases page on GitHub. In the latest release’s Assets list, choose the Android APK."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "Android · Open the downloaded file",
+          "text": "Wait for the download and tap the file. If the phone asks for permission, open the suggested settings and allow installs from this source."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "Android · Install the app",
+          "text": "Return to the installer and tap “Install”. When “Open” appears, tap it."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "Windows · Download the ZIP",
+          "text": "On the Kovetz releases page on GitHub, choose the Windows ZIP. Find the downloaded file in your Downloads folder."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "Windows · Extract the files",
+          "text": "Right-click the ZIP and choose “Extract All”. Open the folder that was created."
+        },
+        {
+          "type": "step",
+          "number": 6,
+          "title": "Windows · Start Kovetz",
+          "text": "Double-click “kovetz.exe” in that folder. Leave the other files beside it."
+        },
+        {
+          "type": "step",
+          "number": 7,
+          "title": "Linux · Download the archive",
+          "text": "On the Kovetz releases page on GitHub, choose the Linux archive. Its name ends in .tar.gz."
+        },
+        {
+          "type": "step",
+          "number": 8,
+          "title": "Linux · Unpack the archive",
+          "text": "In Downloads, right-click the archive. Choose “Extract Here” or a similar option."
+        },
+        {
+          "type": "step",
+          "number": 9,
+          "title": "Linux · Start Kovetz",
+          "text": "Open the extracted folder and then its “bundle” folder. Run “kovetz” and leave the “data” and “lib” folders beside it."
+        },
+        {
+          "type": "step",
+          "number": 10,
+          "title": "Update · Check the version",
+          "text": "Open the menu, choose “Updates” and then “Check for updates”. Wait for the reply."
+        },
+        {
+          "type": "step",
+          "number": 11,
+          "title": "Update · Get the new file",
+          "text": "If a new version appears, press “Download” or “Release page”. On the release page, choose the file for your device on GitHub."
+        },
+        {
+          "type": "step",
+          "number": 12,
+          "title": "Update · Open the new version",
+          "text": "On Android, open the new APK and confirm the update. On a computer, close the old app, unpack the new version into a different folder and run it from there."
+        }
+      ]
+    },
+    {
+      "id": "main_screen",
+      "title": "Home screen and menu",
+      "summary": "The home screen lets you get started or change how the app looks.",
+      "blocks": [
+        {
+          "type": "step",
+          "number": 1,
+          "title": "Find the card you need",
+          "text": "Press “Merge backups” for one combined copy or “Export notes” to read your notes outside JW Library. For settings, press the button with three lines.",
+          "image": "home",
+          "note": "1 — “Merge backups”. 2 — “Export notes”. 3 — menu button. 4 — language button."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "Open the menu",
+          "text": "Press the button with three lines. Choose the row you need, such as “How to use”, or press “Home” to close the menu.",
+          "image": "drawer",
+          "note": "1 — “Merge backups”. 2 — “Export notes”. 3 — “Language”. 4 — “Updates”. 5 — “How to use”."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "Choose a language",
+          "text": "Press the language button at the top or “Language” in the menu. In “App language”, press the row you want.",
+          "image": "language_dialog",
+          "note": "1 — “System default”, the device language. 2 — “Русский”, Russian. 3 — “English”."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "Choose a theme",
+          "text": "Open the menu and press “Theme”. Choose “Light”, “Dark” or “System” to follow the device setting.",
+          "image": "theme_dialog",
+          "note": "1 — “System”. 2 — “Light”. 3 — “Dark”."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "See information about the app",
+          "text": "In the menu, press “About”. To copy the project address, press “Source code — GitHub”. Paste it into your browser to open the page.",
+          "image": "about",
+          "note": "1 — “Developer”, the author’s name. 2 — “Source code — GitHub”, the row that copies the link."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Save your backups first",
+      "summary": "A fresh backup lets you get your phone’s records back if you want to go back.",
+      "blocks": [
+        {
+          "type": "warning",
+          "text": "Restoring in JW Library replaces the personal records on that device with the records from the chosen backup. A new note that is missing from the backup may disappear from the phone. Start with a fresh backup."
+        },
+        {
+          "type": "step",
+          "number": 1,
+          "title": "Open “My Notes”",
+          "text": "Open JW Library on your phone. Go to “My Notes”."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "Open the backup menu",
+          "text": "Tap the cloud icon with an arrow. Choose the option to create a backup."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "Save the phone backup",
+          "text": "Choose to save to a file if your phone offers several choices. Pick a folder you can find again and confirm the save."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "Make sure the file is there",
+          "text": "Open the folder in your files app. Remember the file name and where you saved it."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "Back up the other devices",
+          "text": "Repeat these steps on your tablet and any other device with records you want. If you merge on a computer, copy each file there, for example with a cable."
+        },
+        {
+          "type": "step",
+          "number": 6,
+          "title": "Keep your original backups",
+          "text": "Keep the files made by JW Library somewhere safe. Keep them after the merge too."
+        }
+      ]
+    },
+    {
+      "id": "merge",
+      "title": "How to merge backups",
+      "summary": "Three screens help you choose files, set the rules and save the result.",
+      "blocks": [
+        {
+          "type": "step",
+          "number": 1,
+          "title": "Files · Start the merge",
+          "text": "On the home screen, press “Merge backups”. On “Files”, press “Choose files”.",
+          "image": "merge_files_empty",
+          "note": "1 — “Choose files”. 2 — back arrow to leave this screen."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "Files · Add two or more backups",
+          "text": "Select at least two different JW Library backup files ending in .jwlibrary. If you selected only one, press “Choose files” again to add another."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "Files · Choose the primary backup",
+          "text": "Press the star marked “Primary” under the file you want to give priority. That file sets the order of favourites and gets first choice of bookmark slots.",
+          "image": "merge_files_two",
+          "note": "1 — “Primary”. 2 — “Remove file” cross. 3 — “Next”."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "Files · Check the list and go on",
+          "text": "If you added the wrong file, press the cross beside it. If you leave all stars unselected, the app uses the newest backup as the primary one. Press “Next”."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "Rules · Choose which note version to keep",
+          "text": "In “Notes with the same ID”, press “Newest version” or “From the primary backup”. This rule applies when the same note was changed in different ways.",
+          "image": "merge_rules",
+          "note": "1 — “Newest version” for notes. 2 — “From the primary backup” for answers. 3 — “Merge”."
+        },
+        {
+          "type": "step",
+          "number": 6,
+          "title": "Rules · Choose which answers to keep",
+          "text": "In “Publication answers”, press “From the primary backup” or “From the newest backup”. The second choice uses the date of the whole backup."
+        },
+        {
+          "type": "tip",
+          "text": "If you are unsure, keep the suggested choices. Different notes stay separate, and you can read differing versions of a note or an answer in the report."
+        },
+        {
+          "type": "step",
+          "number": 7,
+          "title": "Rules · Start merging",
+          "text": "Press “Merge”. The app opens “Result” and starts working."
+        },
+        {
+          "type": "step",
+          "number": 8,
+          "title": "Result · Wait or cancel",
+          "text": "While the circle moves, wait. To stop, press “Cancel” and wait for it to finish stopping. Your original files stay as they were.",
+          "image": "merge_progress",
+          "note": "1 — “Cancel”. 2 — the moving circle that shows work is in progress."
+        },
+        {
+          "type": "step",
+          "number": 9,
+          "title": "Result · Look at what was saved",
+          "text": "When you see “Done”, look at the counts under the heading. If there is a yellow “Review … records” message, save the result and read the report before restoring.",
+          "image": "merge_done",
+          "note": "1 — counts of saved records. 2 — “Save backup and report”. 3 — “Export notes from the result”. 4 — “Merge again”."
+        },
+        {
+          "type": "warning",
+          "text": "The yellow message means some records need attention. For example, a bookmark slot may have been full or a playlist file may have been missing. The report explains what happened."
+        },
+        {
+          "type": "step",
+          "number": 10,
+          "title": "Result · Save on your device",
+          "text": "Press “Save backup and report”. On Android, choose a folder and confirm. On a computer, choose a folder and a name for the new backup, then press “Save”."
+        },
+        {
+          "type": "step",
+          "number": 11,
+          "title": "Result · Find both files",
+          "text": "Open the chosen folder and look for the new .jwlibrary backup and its .report.txt report. If you saw a warning, open the report as a plain text file."
+        },
+        {
+          "type": "step",
+          "number": 12,
+          "title": "Result · Continue if you need to",
+          "text": "To save notes separately, press “Export notes from the result”. To choose your files or rules again, press “Merge again”."
+        },
+        {
+          "type": "tip",
+          "text": "If you close the folder picker, the result stays on the screen. On Android, previously saved files stay in place. On a computer, if the names match, you can cancel replacement and choose a new name."
+        }
+      ]
+    },
+    {
+      "id": "restore",
+      "title": "How to restore in JW Library",
+      "summary": "Make sure you have a fresh phone backup before restoring the combined one.",
+      "blocks": [
+        {
+          "type": "step",
+          "number": 1,
+          "title": "Check your phone backup",
+          "text": "Make sure you have a fresh file from “Save your backups first”. Restoring replaces the personal JW Library records on this phone."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "Find the merged backup on your phone",
+          "text": "If the merged backup is on a computer, copy it to the phone, for example with a cable. Restore the .jwlibrary backup itself and keep the TXT report beside it if you wish."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "Open the backup menu",
+          "text": "Open JW Library and go to “My Notes”. Tap the cloud icon with an arrow and choose “Restore”."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "Choose the merged backup",
+          "text": "Choose the merged backup from the folder where you saved it. If your phone opened the file directly in JW Library, wait for the restore prompt."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "Confirm the restore",
+          "text": "Check that you picked the right file. Confirm the restore and wait for it to finish."
+        },
+        {
+          "type": "step",
+          "number": 6,
+          "title": "Check familiar records",
+          "text": "Open “My Notes” and find a familiar note from each device. Check a few important tags, bookmarks or highlights too."
+        },
+        {
+          "type": "step",
+          "number": 7,
+          "title": "If JW Library says the saved data is damaged",
+          "text": "Check that you opened the merged backup and that the whole file was copied. If it still fails, merge the originals again in a current version of Kovetz and save under a new name."
+        },
+        {
+          "type": "step",
+          "number": 8,
+          "title": "Go back to your phone’s records if needed",
+          "text": "If the merged backup is not right for you, use the same steps to restore the phone’s own fresh backup. If the merged backup still fails, write down the error and the Kovetz version from “About” for the developer."
+        }
+      ]
+    },
+    {
+      "id": "export",
+      "title": "How to export notes",
+      "summary": "You can save your notes as a folder to read or as a book.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The app saves the words you wrote in your notes. By default, it includes only notes with tags. Highlights, bookmarks and publication text are left out of the export."
+        },
+        {
+          "type": "step",
+          "number": 1,
+          "title": "Overview · Open a backup",
+          "text": "On the home screen, press “Export notes”, then “Choose a backup”. Choose the JW Library file and wait for the list."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "Overview · Or use the merged backup",
+          "text": "On the “Done” screen, press “Export notes from the result”. If you opened a regular backup and want a different one, press “Change”."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "Overview · Find a note",
+          "text": "Press “Search notes” and type a word. Press a tag below the search box to see notes with that label.",
+          "image": "export_overview",
+          "note": "1 — “Search notes”. 2 — the first tag and its note count. 3 — the first note card. 4 — “Export”."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "Overview · Go to export",
+          "text": "To clear the search, press the “Clear” cross, and to clear a tag filter, press the same tag again. Press “Export”. Search and tag choices only change the list you see."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "Markdown · Choose the format",
+          "text": "Press “Markdown for Obsidian”. If you also want untagged notes, turn on “Include notes without tags”.",
+          "image": "export_format",
+          "note": "1 — “Markdown for Obsidian”. 2 — “PDF”. 3 — “Include notes without tags”. 4 — “Create”."
+        },
+        {
+          "type": "step",
+          "number": 6,
+          "title": "Markdown · Save the export",
+          "text": "Press “Create”. On a computer, choose where to make the new folder, or on Android choose where to save the ZIP."
+        },
+        {
+          "type": "step",
+          "number": 7,
+          "title": "Markdown · Unzip on your phone",
+          "text": "On Android, find the ZIP in your files app. Open it and choose “Extract” or a similar button. On a computer, the folder is already ready."
+        },
+        {
+          "type": "step",
+          "number": 8,
+          "title": "Markdown · Open the folder in Obsidian",
+          "text": "Open Obsidian and choose “Open folder as vault”. Pick the whole export folder, the one that contains “Index”."
+        },
+        {
+          "type": "step",
+          "number": 9,
+          "title": "Markdown · Open “Index”",
+          "text": "Press “Index” to browse the tags. “Notes” has one file per note, and “Tags” has lists of notes by topic."
+        },
+        {
+          "type": "step",
+          "number": 10,
+          "title": "PDF · Choose the book",
+          "text": "On the format screen, press “PDF”. For an “Untagged” section in the book, turn on “Include notes without tags”."
+        },
+        {
+          "type": "step",
+          "number": 11,
+          "title": "PDF · Choose the order and save the book",
+          "text": "Under “Order inside a tag”, press “By Bible and publication” or “By date”, from older notes to newer ones. Press “Create”. Wait for the save window and choose where to put the file.",
+          "image": "export_pdf_options",
+          "note": "1 — the two choices for the order inside a tag. 2 — “Create”."
+        },
+        {
+          "type": "tip",
+          "text": "A book of about 1,700 notes can take around 10 seconds to make. It may take longer on a slower device."
+        },
+        {
+          "type": "step",
+          "number": 12,
+          "title": "PDF · Open the cover and contents",
+          "text": "Open the saved PDF. To go to a topic, press the tag name in “Contents by tag” or find the page yourself.",
+          "image": "pdf_cover",
+          "note": "1 — the book title on the cover. 2 — the contents with the list of tags."
+        },
+        {
+          "type": "step",
+          "number": 13,
+          "title": "PDF · Read the notes for a topic",
+          "text": "Scroll through the pages for your topic. There are no buttons to press on this book page. If a note has several tags, it is printed once in each of those sections.",
+          "image": "pdf_page",
+          "note": "1 — the tag name. 2 — the note text. You can simply read here."
+        },
+        {
+          "type": "tip",
+          "text": "Every PDF page has a «Table of contents» button at the bottom and a button with the current tag name. After jumping through a link, press «Table of contents» to return to the top. The tags are also listed in the bookmarks panel of your PDF reader."
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Language, theme and updates",
+      "summary": "You can change the settings whenever you like.",
+      "blocks": [
+        {
+          "type": "step",
+          "number": 1,
+          "title": "Set the language",
+          "text": "Open the menu and press “Language”. In “App language”, press “Русский”, “English” or “System default”."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "Set the theme",
+          "text": "Open the menu and press “Theme”. Choose “Light”, “Dark” or “System”."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "Check for updates yourself",
+          "text": "Open the menu and press “Updates”. Press “Check for updates” and wait.",
+          "image": "updates",
+          "note": "1 — “Check for updates”. 2 — the “Check automatically” switch."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "Read the answer",
+          "text": "If it says “You have the latest version”, you can carry on. If a new version is available, press “Download” or “Release page” and go back to “Install and update”."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "Turn start-up checks on or off",
+          "text": "Press “Check automatically” if you want a check at start-up once a day. It starts off. To check only when you ask, turn it off again."
+        },
+        {
+          "type": "p",
+          "text": "Kovetz only asks GitHub for a list of published versions. The check does not send your files, notes or device details."
+        }
+      ]
+    },
+    {
+      "id": "problems",
+      "title": "If something goes wrong",
+      "summary": "Find the message or situation you recognise and try the step beside it.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A file name may appear before the message. It tells you which backup to check."
+        },
+        {
+          "type": "step",
+          "number": 1,
+          "title": "“Could not read the file as a JW Library backup”",
+          "text": "It may be the wrong kind of file or an incomplete copy. Take a backup made by JW Library and copy it again."
+        },
+        {
+          "type": "step",
+          "number": 2,
+          "title": "“The database version disagrees with the backup manifest”",
+          "text": "Two parts of the file disagree about its format. Make a fresh backup in JW Library and add it."
+        },
+        {
+          "type": "step",
+          "number": 3,
+          "title": "“Unrecognized structure of table”",
+          "text": "The app found an unfamiliar way of storing records. Check for updates and, if the error returns, write down the full message for the developer."
+        },
+        {
+          "type": "step",
+          "number": 4,
+          "title": "“Backup schema version … is currently unsupported”",
+          "text": "The app cannot read this kind of backup yet. Keep it and try a fresh backup from an updated JW Library."
+        },
+        {
+          "type": "step",
+          "number": 5,
+          "title": "“The backup database references missing records”",
+          "text": "Some records point to other records that are missing from the file. Choose a working original backup from that device."
+        },
+        {
+          "type": "step",
+          "number": 6,
+          "title": "“The database failed its integrity check”",
+          "text": "The records inside the file did not pass a check. Copy the original again or make a fresh backup in JW Library."
+        },
+        {
+          "type": "step",
+          "number": 7,
+          "title": "“The backup contents do not match its checksum”",
+          "text": "A check found that the contents differ from what was saved. Copy the original file again or make a fresh backup."
+        },
+        {
+          "type": "step",
+          "number": 8,
+          "title": "“The backup is too large or contains too many files”",
+          "text": "The app stopped because of the size of the backup. If you have a smaller original with the records you need, try it and keep the large one."
+        },
+        {
+          "type": "step",
+          "number": 9,
+          "title": "“The recovery report inside this earlier merge result is damaged”",
+          "text": "The app cannot read the report inside an older result. Choose the backups made by JW Library itself."
+        },
+        {
+          "type": "step",
+          "number": 10,
+          "title": "“A media file referenced by a playlist is missing”",
+          "text": "A file used by a playlist is missing from the backup. Add a fresh backup from a device that still has the file."
+        },
+        {
+          "type": "step",
+          "number": 11,
+          "title": "“Could not read or write a file”",
+          "text": "Check that the file is available on the device and that the save folder has room. Try again or choose a different folder."
+        },
+        {
+          "type": "step",
+          "number": 12,
+          "title": "“Merge cancelled”",
+          "text": "The app stopped after you pressed “Cancel”. To start again, go back to the rules and press “Merge”."
+        },
+        {
+          "type": "step",
+          "number": 13,
+          "title": "“Internal error”",
+          "text": "Something went wrong inside the app, and your original files stayed as they were. Try once more and, if it happens again, write down the message and the app version for the developer."
+        },
+        {
+          "type": "step",
+          "number": 14,
+          "title": "“Add at least two different backups”",
+          "text": "One file or two copies of the same backup are not enough. Press “Choose files” and add a different JW Library backup."
+        },
+        {
+          "type": "step",
+          "number": 15,
+          "title": "“Could not merge the backups”",
+          "text": "For example, the chosen primary backup may be unavailable. Go back to the list, check the files and pick “Primary” again under the backup you want."
+        },
+        {
+          "type": "step",
+          "number": 16,
+          "title": "The button is grey",
+          "text": "For “Next”, add two different backups, and for “Export”, use a backup with at least one tagged note. If the app is still reading or saving, wait for it to finish."
+        },
+        {
+          "type": "step",
+          "number": 17,
+          "title": "You added the wrong file",
+          "text": "Go back to “Files” and press the “Remove file” cross beside the wrong name. If needed, add the right backup with “Choose files”."
+        },
+        {
+          "type": "step",
+          "number": 18,
+          "title": "The screen shows a previous result",
+          "text": "If you changed the language, files or rules, press “Merge again”. Check the list and rules, then press “Merge” to enable saving or exporting again."
+        },
+        {
+          "type": "step",
+          "number": 19,
+          "title": "“Cannot reach GitHub”",
+          "text": "Check your connection and press “Check for updates” again later. You can still merge backups and export notes while offline."
+        },
+        {
+          "type": "step",
+          "number": 20,
+          "title": "You cancelled the folder or file picker",
+          "text": "If you closed the save window, press “Save backup and report” again, or “Create” for notes. If you closed the backup picker, open it again when ready."
+        },
+        {
+          "type": "step",
+          "number": 21,
+          "title": "The files could not be saved",
+          "text": "Check the free space and pick a different folder or a new name. If the app warns that files may be incomplete, use the new result only after it confirms a successful save."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": "Where your data stays",
+      "summary": "Your files are processed on your phone or computer.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The original files stay where you put them. The new backup, report and exported notes go where you choose to save them. The report can also contain personal text."
+        },
+        {
+          "type": "p",
+          "text": "The app uses the internet only to check for updates. It asks GitHub for the list of releases. It does not send backups, notes or device details."
+        },
+        {
+          "type": "p",
+          "text": "While working, the app makes temporary copies in its own area on the device. It removes them after use. If work was interrupted, it tries to clear the leftovers at the next start."
+        }
+      ]
+    },
+    {
+      "id": "words",
+      "title": "Words in this guide",
+      "summary": "Here are short explanations for words you may see on the screen.",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Backup. A file in which JW Library saves your records so you can bring them back later.",
+            "Merge. Bring records from several backups together into one new backup.",
+            "Primary backup. The starred copy that sets the order of favourites and gets first choice of bookmark slots.",
+            "Note. Something you wrote for yourself.",
+            "Tag. A short topic label, such as “Family”. It helps you find notes about the same thing.",
+            "Highlight. A place in the text you marked with colour.",
+            "Bookmark. A mark for a place you want to come back to.",
+            "Report. A text file beside the merged backup. It tells you what was saved and what needs a look.",
+            "Markdown. A simple kind of text file that uses marks for headings, lists and links.",
+            "Obsidian. An app for reading and organising notes in a folder.",
+            "PDF. A file with pages you can read and print like a book.",
+            "Release. A version of the app that the developer has put up for download."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Kovetz",
+  "version": "0.6.0",
+  "baseUrl": "https://pioner14.github.io/kovetz-site",
+  "repo": "https://github.com/pioner14/kovetz",
+  "releases": "https://github.com/pioner14/kovetz/releases/latest",
+  "paypal5": "https://paypal.me/NikolaiGolotaistrov/5EUR",
+  "paypal": "https://paypal.me/NikolaiGolotaistrov",
+  "developer": "Nikolai Golotaistrov"
+}

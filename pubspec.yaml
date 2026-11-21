@@ -1,0 +1,7 @@
+name: kovetz_site
+description: Static website and user guide of Kovetz.
+publish_to: none
+environment:
+  sdk: ^3.0.0
+dev_dependencies:
+  test: ^1.25.0

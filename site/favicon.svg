@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+  <rect width="1024" height="1024" rx="224" fill="#376754"/>
+  <!-- Left merging page -->
+  <path d="M240 280C240 244.654 268.654 216 304 216H460C495.346 216 524 244.654 524 280V744C524 768.261 496.526 782.226 476.899 767.974L382 699.048L287.101 767.974C267.474 782.226 240 768.261 240 744V280Z" fill="#BAEED6" fill-opacity="0.35"/>
+  <!-- Right merging page -->
+  <path d="M500 280C500 244.654 528.654 216 564 216H720C755.346 216 784 244.654 784 280V744C784 768.261 756.526 782.226 736.899 767.974L642 699.048L547.101 767.974C527.474 782.226 500 768.261 500 744V280Z" fill="#D3E7DC" fill-opacity="0.55"/>
+  <!-- Unified foreground bookmark -->
+  <path d="M362 248C362 212.654 390.654 184 426 184H598C633.346 184 662 212.654 662 248V780C662 805.238 633.035 819.442 613.103 803.939L512 725.303L410.897 803.939C390.965 819.442 362 805.238 362 780V248Z" fill="#FCFDF9"/>
+  <!-- Subtle horizontal lines on bookmark -->
+  <rect x="428" y="316" width="168" height="24" rx="12" fill="#376754" fill-opacity="0.25"/>
+  <rect x="428" y="372" width="128" height="24" rx="12" fill="#376754" fill-opacity="0.25"/>
+  <circle cx="512" cy="528" r="52" fill="#376754"/>
+  <path d="M488 528L504 544L538 510" stroke="#FCFDF9" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kovetz — merge JW Library notes from your phone, tablet, and computer</title>
+  <meta name="description" content="Merge JW Library backups from multiple devices and export your notes to PDF or Obsidian. Kovetz is free, ad-free, and works offline.">
+  <link rel="canonical" href="https://pioner14.github.io/kovetz-site/en/">
+    <link rel="alternate" hreflang="ru" href="https://pioner14.github.io/kovetz-site/ru/">
+    <link rel="alternate" hreflang="en" href="https://pioner14.github.io/kovetz-site/en/">
+    <link rel="alternate" hreflang="x-default" href="https://pioner14.github.io/kovetz-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kovetz">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Kovetz — merge JW Library notes from your phone, tablet, and computer">
+  <meta property="og:description" content="Merge JW Library backups from multiple devices and export your notes to PDF or Obsidian. Kovetz is free, ad-free, and works offline.">
+  <meta property="og:url" content="https://pioner14.github.io/kovetz-site/en/">
+  <meta property="og:image" content="https://pioner14.github.io/kovetz-site/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kovetz">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kovetz — merge JW Library notes from your phone, tablet, and computer">
+  <meta name="twitter:description" content="Merge JW Library backups from multiple devices and export your notes to PDF or Obsidian. Kovetz is free, ad-free, and works offline.">
+  <meta name="twitter:image" content="https://pioner14.github.io/kovetz-site/og.png">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../site.js" defer></script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kovetz","description":"Merge JW Library backups from multiple devices and export your notes to PDF or Obsidian. Kovetz is free, ad-free, and works offline.","operatingSystem":"Android, Windows, Linux","applicationCategory":"UtilitiesApplication","softwareVersion":"0.6.0","downloadUrl":"https://github.com/pioner14/kovetz/releases/latest","offers":{"@type":"Offer","price":0,"priceCurrency":"EUR"},"author":{"@type":"Person","name":"Nikolai Golotaistrov"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"My notes disappeared after restoring a backup. What can I do?","acceptedAnswer":{"@type":"Answer","text":"Restoring in JW Library replaces the data on your device. If older backups still contain your notes, merge them with Kovetz and restore the combined file."}},{"@type":"Question","name":"Do I need an internet connection?","acceptedAnswer":{"@type":"Answer","text":"You only need it to download Kovetz and to check for updates if you choose. Merging and exporting work offline."}},{"@type":"Question","name":"Is it safe for my original backups?","acceptedAnswer":{"@type":"Answer","text":"Kovetz writes the result to a separate file and leaves your original backups untouched. Always make a fresh backup of your device before restoring."}},{"@type":"Question","name":"What happens if I edit the same note on two devices?","acceptedAnswer":{"@type":"Answer","text":"The merged backup keeps the newer version and saves the other version in the report."}},{"@type":"Question","name":"Will notes I deleted come back?","acceptedAnswer":{"@type":"Answer","text":"Yes, if a deleted note still exists in one of the backups you added to the merge."}},{"@type":"Question","name":"Which backups can I use?","acceptedAnswer":{"@type":"Answer","text":"Kovetz accepts .jwlibrary files from different devices, including backups made in different years."}},{"@type":"Question","name":"Can I import notes back into JW Library from PDF or Obsidian?","acceptedAnswer":{"@type":"Answer","text":"Restore the merged .jwlibrary backup to bring notes back into JW Library. PDF and Obsidian exports are for reading and searching."}},{"@type":"Question","name":"How much does Kovetz cost?","acceptedAnswer":{"@type":"Answer","text":"Kovetz is free. Its source code is available under the MIT license."}},{"@type":"Question","name":"Is Kovetz an official JW Library app?","acceptedAnswer":{"@type":"Answer","text":"Kovetz is an independent program, not affiliated with JW Library or its developers."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="../favicon.svg" alt="Kovetz" width="40" height="40" loading="eager"><span aria-hidden="true">Kovetz</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#steps">How it works</a>
+      <a href="guide/index.html">Guide</a>
+      <a href="index.html#download">Download</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#support">Support</a>
+    </nav>
+    <div class="header-controls">
+      <nav class="language-switch" aria-label="Site language">
+        <a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="Русский">RU</a>
+        <a href="../en/index.html" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
+      </nav>
+      <label class="theme-control" title="Color theme" hidden>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a8 8 0 1 0 0 16V4Z M12 4a8 8 0 0 1 0 16"/></svg>
+        <select data-theme-select aria-label="Color theme">
+          <option value="auto">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Dark" aria-pressed="false" title="Color theme" hidden>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a8 8 0 1 0 0 16V4Z M12 4a8 8 0 0 1 0 16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section id="hero" class="section hero">
+    <div class="container split hero-inner">
+      <div class="hero-copy">
+        <h1>All your JW Library notes — in one place</h1>
+        <p class="lede">Your phone, tablet, and computer each hold different study notes. Kovetz brings them into one backup you can restore in JW Library.</p>
+        <div class="actions">
+          <a class="button primary" href="#download"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>Download for free</a>
+          <a class="button" href="#steps">How it works</a>
+        </div>
+        <ul class="chips" role="list">
+          <li>Android · Windows · Linux</li>
+          <li>Free</li>
+          <li>Ad-free</li>
+          <li>Works offline</li>
+        </ul>
+      </div>
+      <div class="hero-phones"><div class="phone phone-rear"><img src="../screens/en/home.png" alt="Kovetz home screen" width="560" height="1212" loading="lazy"></div><div class="phone"><img src="../screens/en/merge_done.png" alt="Kovetz screen showing a completed merge of JW Library backups" width="560" height="1212" loading="eager" fetchpriority="high"></div></div>
+    </div>
+  </section>
+  <section id="problem" class="section band">
+    <div class="container split">
+      <div><h2>Your study gems are scattered across devices</h2><p>As you read and study, different notes build up on your phone, tablet, and computer. Restoring a backup in JW Library replaces the notes on that device with the notes from that backup.</p></div>
+      <figure class="diagram">
+  <svg viewBox="0 0 480 249" role="img" aria-label="Kovetz brings backups from a phone, tablet, and computer into one file">
+    <g class="diagram-lines">
+      <path d="M80 91V111Q80 135 106 135H240 M240 91V162 M400 91V111Q400 135 374 135H240 M233 153L240 162L247 153"/>
+    </g>
+    <g class="diagram-tiles">
+      <rect x="55" y="4" width="50" height="50" rx="13"/>
+      <rect x="215" y="4" width="50" height="50" rx="13"/>
+      <rect x="375" y="4" width="50" height="50" rx="13"/>
+      <rect x="214" y="174" width="52" height="39" rx="11"/>
+    </g>
+    <g class="diagram-symbols">
+      <rect x="73" y="16" width="14" height="25" rx="3"/><path d="M79 36h2"/>
+      <rect x="230" y="16" width="20" height="25" rx="3"/><path d="M239 36h2"/>
+      <rect x="387" y="17" width="26" height="16" rx="2"/><path d="M400 33v7m-8 0h16"/>
+      <path d="m227 190 13-6 13 6-13 6-13-6Zm0 6 13 6 13-6m-26 6 13 6 13-6"/>
+    </g>
+    <g class="diagram-labels">
+      <text x="80" y="80">Phone</text><text x="240" y="80">Tablet</text><text x="400" y="80">Computer</text>
+      <text x="240" y="242">Merged backup</text>
+    </g>
+  </svg>
+</figure>
+    </div>
+  </section>
+  <section id="solution" class="section">
+    <div class="container split">
+      <div><h2>Kovetz brings your study notes together</h2><p>Add backups from different devices, even ones made years apart. Kovetz merges notes, highlights, bookmarks, favorites, and answers into a single .jwlibrary file.</p></div>
+      <ul class="checklist" role="list">
+        <li><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Different notes are kept together.</li>
+        <li><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>If you edited a note in two places, the merged backup keeps the newer version and the report preserves the other.</li>
+        <li><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>You can restore the merged backup in JW Library on the device of your choice.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="features" class="section band">
+    <div class="container">
+      <h2>Keep your notes and read them where you like</h2>
+      <div class="grid-three">
+                <article class="card">
+          <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 9-4 9 4-9 4-9-4Zm0 5 9 4 9-4m-18 5 9 4 9-4"/></svg></span>
+          <h3>Keep your original backups</h3><p>Kovetz saves the result as a separate file and reports anything it could not transfer. Even backups from 2019 are supported.</p>
+        </article>
+        <article class="card">
+          <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-3-3-6-3-9-2v14c3-1 6-1 9 2 3-3 6-3 9-2V4c-3-1-6-1-9 2Zm0 0v14"/></svg></span>
+          <h3>Read outside the app</h3><p>Save notes as a PDF book with a table of contents by tag and page numbers. Read it on screen or print it.</p>
+        </article>
+        <article class="card">
+          <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v11H3V6Z"/></svg></span>
+          <h3>Take your notes to Obsidian</h3><p>Get one Markdown file per note, index pages by tag, and internal links that are ready to use.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="steps" class="section">
+    <div class="container">
+      <h2>Three simple steps</h2>
+      <ol class="grid-three workflow" role="list">
+                <li class="card workflow-step">
+          <div class="workflow-copy">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Choose your backups</h3><p>Select “Choose files” and add backups from your phone, tablet, and computer.</p>
+          </div>
+          <div class="phone"><img src="../screens/en/merge_files_two.png" alt="Two JW Library backup files selected for merging" width="560" height="1212" loading="lazy"></div>
+        </li>
+        <li class="card workflow-step">
+          <div class="workflow-copy">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Select “Merge”</h3><p>Review the merge rules. Kovetz reads your backups and combines them into one file.</p>
+          </div>
+          <div class="phone"><img src="../screens/en/merge_rules.png" alt="Conflict resolution options for merging two backups" width="560" height="1212" loading="lazy"></div>
+        </li>
+        <li class="card workflow-step">
+          <div class="workflow-copy">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>Save the result</h3><p>Restore the merged file in JW Library, or choose “Export notes” and select PDF or Obsidian.</p>
+          </div>
+          <div class="phone"><img src="../screens/en/export_format.png" alt="Export screen with choices for a PDF book or an Obsidian folder" width="560" height="1212" loading="lazy"></div>
+        </li>
+      </ol>
+      <a class="guide-link" href="guide/index.html">See the illustrated guide</a>
+    </div>
+  </section>
+  <section id="export" class="section band">
+    <div class="container">
+      <h2>Notes you can read anywhere</h2>
+      <div class="grid-two export-grid">
+  <article class="card export-card">
+    <h3>PDF book</h3><p>Find the right page using the table of contents by tag. Within each tag, sort notes by source or date. The PDF supports Cyrillic and Armenian text.</p>
+    <div class="pdf-preview"><img src="../screens/en/pdf_cover.png" alt="Cover of a PDF book of exported notes" width="579" height="819" loading="lazy"><img src="../screens/en/pdf_page.png" alt="Sample page from a PDF book with notes and a page number" width="579" height="819" loading="lazy"></div>
+  </article>
+  <article class="card export-card">
+    <h3>Obsidian folder</h3><p>Each note gets its own Markdown file with the source in its properties. Tag pages link to the matching notes, and the main index helps you find your way around.</p>
+    <div class="tree">
+      <div><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v11H3V6Z"/></svg>My notes/</div>
+      <ul>
+        <li>Index.md</li>
+        <li>Tags/<ul><li>Hope.md</li></ul></li>
+        <li>Notes/<ul><li>Romans 15-13.md</li></ul></li>
+      </ul>
+    </div>
+  </article>
+</div>
+    </div>
+  </section>
+  <section id="privacy" class="section">
+    <div class="container feature-callout">
+      <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10V7a5 5 0 0 1 10 0v3M5 10h14v11H5zm7 5v2"/></svg></span>
+      <div><h2>Runs on your device</h2><p>Your backups and notes are processed on your device. Kovetz connects to GitHub only if you choose to check for updates. You can use the app without an account.</p></div>
+    </div>
+  </section>
+  <section id="guide" class="section band">
+    <div class="container feature-callout">
+      <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-3-3-6-3-9-2v14c3-1 6-1 9 2 3-3 6-3 9-2V4c-3-1-6-1-9 2Zm0 0v14"/></svg></span>
+      <div>
+        <h2>Easy to follow at any age</h2><p>The guide walks you through one step at a time, with large screenshots that show exactly where to click or tap. Read it on the site or print a copy.</p>
+        <a class="button" href="guide/index.html">Open the user guide</a>
+      </div>
+    </div>
+  </section>
+  <section id="download" class="section">
+    <div class="container">
+      <h2>Download Kovetz</h2>
+      <p class="version">Version <strong>0.6.0</strong></p>
+      <div class="grid-three platforms">
+                <a class="card platform" href="https://github.com/pioner14/kovetz/releases/latest">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16a8 8 0 0 1 16 0v3H4Zm3-9L5 4m12 3 2-3M8 14h.1m7.9 0h.1"/></svg>
+          <span><strong>Android</strong><small>APK installer</small></span>
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>
+        </a>
+        <a class="card platform" href="https://github.com/pioner14/kovetz/releases/latest">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l18-2v18L3 19V5Zm0 7h18M11 4v16"/></svg>
+          <span><strong>Windows</strong><small>ZIP archive</small></span>
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>
+        </a>
+        <a class="card platform" href="https://github.com/pioner14/kovetz/releases/latest">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 8h6m-8 5L4 17l2 3h12l2-3-3-4m-10 6v-8c0-4 2-7 5-7s5 3 5 7v8M10 11l2 2 2-2"/></svg>
+          <span><strong>Linux</strong><small>TAR.GZ archive</small></span>
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>
+        </a>
+      </div>
+      <div class="download-links">
+        <a href="https://github.com/pioner14/kovetz/releases">All releases on GitHub</a>
+        <a href="guide/index.html#install">How to allow installation from your browser on Android</a>
+      </div>
+    </div>
+  </section>
+  <section id="support" class="section band">
+    <div class="container feature-callout">
+      <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6c-2-2-6-2-8 1-2-3-6-3-8-1-3 4 2 8 8 13 6-5 11-9 8-13Z"/></svg></span>
+      <div>
+        <h2>Free, and always will be</h2><p>One person builds Kovetz in his spare time. The app is free and ad-free. If it helped you, you can make an optional donation to support development or buy me a coffee.</p>
+        <div class="actions">
+          <a class="button primary" href="https://paypal.me/NikolaiGolotaistrov/5EUR">Buy me a coffee · €5</a>
+          <a class="button" href="https://paypal.me/NikolaiGolotaistrov">Choose an amount</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq" class="section">
+    <div class="container faq">
+      <h2>Frequently asked questions</h2>
+      <details name="faq"><summary>My notes disappeared after restoring a backup. What can I do?</summary><p>Restoring in JW Library replaces the data on your device. If older backups still contain your notes, merge them with Kovetz and restore the combined file.</p></details>
+      <details name="faq"><summary>Do I need an internet connection?</summary><p>You only need it to download Kovetz and to check for updates if you choose. Merging and exporting work offline.</p></details>
+      <details name="faq"><summary>Is it safe for my original backups?</summary><p>Kovetz writes the result to a separate file and leaves your original backups untouched. Always make a fresh backup of your device before restoring.</p></details>
+      <details name="faq"><summary>What happens if I edit the same note on two devices?</summary><p>The merged backup keeps the newer version and saves the other version in the report.</p></details>
+      <details name="faq"><summary>Will notes I deleted come back?</summary><p>Yes, if a deleted note still exists in one of the backups you added to the merge.</p></details>
+      <details name="faq"><summary>Which backups can I use?</summary><p>Kovetz accepts .jwlibrary files from different devices, including backups made in different years.</p></details>
+      <details name="faq"><summary>Can I import notes back into JW Library from PDF or Obsidian?</summary><p>Restore the merged .jwlibrary backup to bring notes back into JW Library. PDF and Obsidian exports are for reading and searching.</p></details>
+      <details name="faq"><summary>How much does Kovetz cost?</summary><p>Kovetz is free. Its source code is available under the MIT license.</p></details>
+      <details name="faq"><summary>Is Kovetz an official JW Library app?</summary><p>Kovetz is an independent program, not affiliated with JW Library or its developers.</p></details>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-links">
+      <span>© 2026 Nikolai Golotaistrov</span>
+      <a href="../LICENSE.txt">MIT license</a>
+      <a href="https://github.com/pioner14/kovetz">Source code on GitHub</a>
+    </div>
+    <p>Kovetz is an independent program, not affiliated with JW Library or its developers.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pioner14.github.io/kovetz-site/sitemap.xml

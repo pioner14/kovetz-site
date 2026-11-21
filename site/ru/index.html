@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kovetz — объединить заметки JW Library с телефона, планшета и компьютера</title>
+  <meta name="description" content="Бесплатная программа объединяет резервные копии JW Library с разных устройств в одну и сохраняет заметки в PDF или Obsidian. Без рекламы, без интернета.">
+  <link rel="canonical" href="https://pioner14.github.io/kovetz-site/ru/">
+    <link rel="alternate" hreflang="ru" href="https://pioner14.github.io/kovetz-site/ru/">
+    <link rel="alternate" hreflang="en" href="https://pioner14.github.io/kovetz-site/en/">
+    <link rel="alternate" hreflang="x-default" href="https://pioner14.github.io/kovetz-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kovetz">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Kovetz — объединить заметки JW Library с телефона, планшета и компьютера">
+  <meta property="og:description" content="Бесплатная программа объединяет резервные копии JW Library с разных устройств в одну и сохраняет заметки в PDF или Obsidian. Без рекламы, без интернета.">
+  <meta property="og:url" content="https://pioner14.github.io/kovetz-site/ru/">
+  <meta property="og:image" content="https://pioner14.github.io/kovetz-site/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kovetz">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kovetz — объединить заметки JW Library с телефона, планшета и компьютера">
+  <meta name="twitter:description" content="Бесплатная программа объединяет резервные копии JW Library с разных устройств в одну и сохраняет заметки в PDF или Obsidian. Без рекламы, без интернета.">
+  <meta name="twitter:image" content="https://pioner14.github.io/kovetz-site/og.png">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../site.js" defer></script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kovetz","description":"Бесплатная программа объединяет резервные копии JW Library с разных устройств в одну и сохраняет заметки в PDF или Obsidian. Без рекламы, без интернета.","operatingSystem":"Android, Windows, Linux","applicationCategory":"UtilitiesApplication","softwareVersion":"0.6.0","downloadUrl":"https://github.com/pioner14/kovetz/releases/latest","offers":{"@type":"Offer","price":0,"priceCurrency":"EUR"},"author":{"@type":"Person","name":"Nikolai Golotaistrov"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Заметки пропали после восстановления резервной копии. Что делать?","acceptedAnswer":{"@type":"Answer","text":"Восстановление в JW Library заменяет данные на устройстве. Если заметки сохранились в старых копиях, соберите их в одну с помощью Kovetz и восстановите объединённую копию."}},{"@type":"Question","name":"Нужен ли интернет?","acceptedAnswer":{"@type":"Answer","text":"Он нужен для скачивания программы и проверки обновлений по желанию. Объединение и экспорт работают без интернета."}},{"@type":"Question","name":"Безопасно ли это для исходных копий?","acceptedAnswer":{"@type":"Answer","text":"Kovetz сохраняет результат отдельным файлом, оставляя исходные копии без изменений. Перед восстановлением всё равно сделайте свежую копию устройства."}},{"@type":"Question","name":"Что будет, если одна заметка изменена на двух устройствах?","acceptedAnswer":{"@type":"Answer","text":"В объединённую копию попадёт более свежая версия, а вторая сохранится в отчёте."}},{"@type":"Question","name":"Вернутся ли заметки, которые я удалял?","acceptedAnswer":{"@type":"Answer","text":"Да, если удалённая заметка осталась в одной из копий, которые вы добавили для объединения."}},{"@type":"Question","name":"Какие копии подходят?","acceptedAnswer":{"@type":"Answer","text":"Подходят файлы .jwlibrary с разных устройств, в том числе копии, сделанные в разные годы."}},{"@type":"Question","name":"Можно ли вернуть заметки в JW Library из PDF или Obsidian?","acceptedAnswer":{"@type":"Answer","text":"Чтобы вернуть заметки в JW Library, восстановите объединённую копию .jwlibrary. Экспорт в PDF и Obsidian предназначен для чтения и поиска."}},{"@type":"Question","name":"Сколько стоит Kovetz?","acceptedAnswer":{"@type":"Answer","text":"Программа бесплатная. Исходный код доступен по лицензии MIT."}},{"@type":"Question","name":"Это официальная программа JW Library?","acceptedAnswer":{"@type":"Answer","text":"Kovetz — независимая программа, которая не связана с JW Library и её разработчиками."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">К содержанию</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="../favicon.svg" alt="Kovetz" width="40" height="40" loading="eager"><span aria-hidden="true">Kovetz</span></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="index.html#features">Возможности</a>
+      <a href="index.html#steps">Как это работает</a>
+      <a href="guide/index.html">Руководство</a>
+      <a href="index.html#download">Скачать</a>
+      <a href="index.html#faq">Вопросы</a>
+      <a href="index.html#support">Поддержать</a>
+    </nav>
+    <div class="header-controls">
+      <nav class="language-switch" aria-label="Язык сайта">
+        <a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="Русский" aria-current="page">RU</a>
+        <a href="../en/index.html" lang="en" hreflang="en" aria-label="English">EN</a>
+      </nav>
+      <label class="theme-control" title="Цветовая тема" hidden>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a8 8 0 1 0 0 16V4Z M12 4a8 8 0 0 1 0 16"/></svg>
+        <select data-theme-select aria-label="Цветовая тема">
+          <option value="auto">Как в системе</option>
+          <option value="light">Светлая</option>
+          <option value="dark">Тёмная</option>
+        </select>
+      </label>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Тёмная" aria-pressed="false" title="Цветовая тема" hidden>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a8 8 0 1 0 0 16V4Z M12 4a8 8 0 0 1 0 16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section id="hero" class="section hero">
+    <div class="container split hero-inner">
+      <div class="hero-copy">
+        <h1>Все ваши заметки JW Library — в одном месте</h1>
+        <p class="lede">Телефон, планшет, компьютер — на каждом устройстве у вас свои находки. Kovetz собирает их в одну резервную копию, которую можно восстановить в JW Library.</p>
+        <div class="actions">
+          <a class="button primary" href="#download"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>Скачать бесплатно</a>
+          <a class="button" href="#steps">Как это работает</a>
+        </div>
+        <ul class="chips" role="list">
+          <li>Android · Windows · Linux</li>
+          <li>Бесплатно</li>
+          <li>Без рекламы</li>
+          <li>Без интернета</li>
+        </ul>
+      </div>
+      <div class="hero-phones"><div class="phone phone-rear"><img src="../screens/ru/home.png" alt="Главный экран Kovetz" width="560" height="1212" loading="lazy"></div><div class="phone"><img src="../screens/ru/merge_done.png" alt="Экран Kovetz с результатом успешного объединения резервных копий" width="560" height="1212" loading="eager" fetchpriority="high"></div></div>
+    </div>
+  </section>
+  <section id="problem" class="section band">
+    <div class="container split">
+      <div><h2>Сокровища разбросаны по устройствам</h2><p>Вы читаете, исследуете и записываете мысли. Со временем на телефоне, планшете и компьютере накапливаются разные заметки. При восстановлении копии JW Library заменяет записи на устройстве данными из этой копии.</p></div>
+      <figure class="diagram">
+  <svg viewBox="0 0 480 249" role="img" aria-label="Kovetz объединяет копии с телефона, планшета и компьютера в один файл">
+    <g class="diagram-lines">
+      <path d="M80 91V111Q80 135 106 135H240 M240 91V162 M400 91V111Q400 135 374 135H240 M233 153L240 162L247 153"/>
+    </g>
+    <g class="diagram-tiles">
+      <rect x="55" y="4" width="50" height="50" rx="13"/>
+      <rect x="215" y="4" width="50" height="50" rx="13"/>
+      <rect x="375" y="4" width="50" height="50" rx="13"/>
+      <rect x="214" y="174" width="52" height="39" rx="11"/>
+    </g>
+    <g class="diagram-symbols">
+      <rect x="73" y="16" width="14" height="25" rx="3"/><path d="M79 36h2"/>
+      <rect x="230" y="16" width="20" height="25" rx="3"/><path d="M239 36h2"/>
+      <rect x="387" y="17" width="26" height="16" rx="2"/><path d="M400 33v7m-8 0h16"/>
+      <path d="m227 190 13-6 13 6-13 6-13-6Zm0 6 13 6 13-6m-26 6 13 6 13-6"/>
+    </g>
+    <g class="diagram-labels">
+      <text x="80" y="80">Телефон</text><text x="240" y="80">Планшет</text><text x="400" y="80">Компьютер</text>
+      <text x="240" y="242">Общая копия</text>
+    </g>
+  </svg>
+</figure>
+    </div>
+  </section>
+  <section id="solution" class="section">
+    <div class="container split">
+      <div><h2>Kovetz соединяет всё, что вы записали</h2><p>Добавьте резервные копии с разных устройств, даже если вы сделали их в разные годы. Kovetz соберёт заметки, выделения, закладки, избранное и ответы в один файл .jwlibrary.</p></div>
+      <ul class="checklist" role="list">
+        <li><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Разные заметки сохраняются вместе.</li>
+        <li><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Если заметку правили в двух местах, в копию попадёт свежая версия, а вторую можно прочитать в отчёте.</li>
+        <li><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Общую копию можно восстановить в JW Library на нужном устройстве.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="features" class="section band">
+    <div class="container">
+      <h2>Сохраните записи и читайте их там, где удобно</h2>
+      <div class="grid-three">
+                <article class="card">
+          <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 9-4 9 4-9 4-9-4Zm0 5 9 4 9-4m-18 5 9 4 9-4"/></svg></span>
+          <h3>Исходные копии в сохранности</h3><p>Kovetz сохраняет результат отдельным файлом и сообщает в отчёте, что не удалось перенести. Подойдут даже копии 2019 года.</p>
+        </article>
+        <article class="card">
+          <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-3-3-6-3-9-2v14c3-1 6-1 9 2 3-3 6-3 9-2V4c-3-1-6-1-9 2Zm0 0v14"/></svg></span>
+          <h3>Ваши заметки вне приложения</h3><p>Сохраните заметки в PDF-книгу с оглавлением по тегам и номерами страниц. Читайте её на экране или распечатайте.</p>
+        </article>
+        <article class="card">
+          <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v11H3V6Z"/></svg></span>
+          <h3>Заметки в Obsidian</h3><p>Получите отдельный Markdown-файл для каждой заметки, оглавления по тегам и готовые ссылки между записями.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="steps" class="section">
+    <div class="container">
+      <h2>Три простых шага</h2>
+      <ol class="grid-three workflow" role="list">
+                <li class="card workflow-step">
+          <div class="workflow-copy">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Выберите резервные копии</h3><p>Нажмите «Выбрать файлы» и добавьте копии с телефона, планшета и компьютера.</p>
+          </div>
+          <div class="phone"><img src="../screens/ru/merge_files_two.png" alt="Две резервные копии JW Library в списке файлов для объединения" width="560" height="1212" loading="lazy"></div>
+        </li>
+        <li class="card workflow-step">
+          <div class="workflow-copy">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Нажмите «Объединить»</h3><p>Проверьте правила объединения. Kovetz прочитает копии и соберёт их в один файл.</p>
+          </div>
+          <div class="phone"><img src="../screens/ru/merge_rules.png" alt="Настройки разрешения конфликтов при объединении двух копий" width="560" height="1212" loading="lazy"></div>
+        </li>
+        <li class="card workflow-step">
+          <div class="workflow-copy">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>Сохраните результат</h3><p>Восстановите общий файл в JW Library или откройте «Экспорт заметок» и выберите PDF или Obsidian.</p>
+          </div>
+          <div class="phone"><img src="../screens/ru/export_format.png" alt="Экран выбора формата экспорта заметок в PDF или папку для Obsidian" width="560" height="1212" loading="lazy"></div>
+        </li>
+      </ol>
+      <a class="guide-link" href="guide/index.html">Подробное руководство с картинками</a>
+    </div>
+  </section>
+  <section id="export" class="section band">
+    <div class="container">
+      <h2>Заметки, которые можно читать где угодно</h2>
+      <div class="grid-two export-grid">
+  <article class="card export-card">
+    <h3>PDF-книга</h3><p>Оглавление по тегам помогает найти нужную страницу. Внутри тега записи можно упорядочить по источнику или дате. В PDF корректно отображаются кириллица и армянский текст.</p>
+    <div class="pdf-preview"><img src="../screens/ru/pdf_cover.png" alt="Титульный лист PDF-книги из экспортированных заметок" width="579" height="819" loading="lazy"><img src="../screens/ru/pdf_page.png" alt="Пример страницы PDF-книги с заметками и номером страницы" width="579" height="819" loading="lazy"></div>
+  </article>
+  <article class="card export-card">
+    <h3>Папка для Obsidian</h3><p>Каждая заметка хранится в своём Markdown-файле с источником в свойствах. Для тегов создаются страницы-оглавления, а общий указатель помогает ориентироваться в записях.</p>
+    <div class="tree">
+      <div><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h7l2 3h9v11H3V6Z"/></svg>Мои заметки/</div>
+      <ul>
+        <li>Указатель.md</li>
+        <li>Теги/<ul><li>Надежда.md</li></ul></li>
+        <li>Заметки/<ul><li>Римлянам 15-13.md</li></ul></li>
+      </ul>
+    </div>
+  </article>
+</div>
+    </div>
+  </section>
+  <section id="privacy" class="section">
+    <div class="container feature-callout">
+      <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10V7a5 5 0 0 1 10 0v3M5 10h14v11H5zm7 5v2"/></svg></span>
+      <div><h2>Работает на вашем устройстве</h2><p>Все копии и заметки обрабатываются на вашем устройстве. Подключение к GitHub нужно, только если вы хотите проверить обновления. Аккаунт для работы с программой не нужен.</p></div>
+    </div>
+  </section>
+  <section id="guide" class="section band">
+    <div class="container feature-callout">
+      <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-3-3-6-3-9-2v14c3-1 6-1 9 2 3-3 6-3 9-2V4c-3-1-6-1-9 2Zm0 0v14"/></svg></span>
+      <div>
+        <h2>Разберётся любой, от мала до велика</h2><p>В руководстве каждый шаг описан простым языком, а на больших снимках экрана отмечено, куда нажать. Руководство можно читать на сайте или распечатать.</p>
+        <a class="button" href="guide/index.html">Открыть руководство</a>
+      </div>
+    </div>
+  </section>
+  <section id="download" class="section">
+    <div class="container">
+      <h2>Скачать Kovetz</h2>
+      <p class="version">Версия <strong>0.6.0</strong></p>
+      <div class="grid-three platforms">
+                <a class="card platform" href="https://github.com/pioner14/kovetz/releases/latest">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16a8 8 0 0 1 16 0v3H4Zm3-9L5 4m12 3 2-3M8 14h.1m7.9 0h.1"/></svg>
+          <span><strong>Android</strong><small>Установочный файл APK</small></span>
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>
+        </a>
+        <a class="card platform" href="https://github.com/pioner14/kovetz/releases/latest">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l18-2v18L3 19V5Zm0 7h18M11 4v16"/></svg>
+          <span><strong>Windows</strong><small>Архив ZIP</small></span>
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>
+        </a>
+        <a class="card platform" href="https://github.com/pioner14/kovetz/releases/latest">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 8h6m-8 5L4 17l2 3h12l2-3-3-4m-10 6v-8c0-4 2-7 5-7s5 3 5 7v8M10 11l2 2 2-2"/></svg>
+          <span><strong>Linux</strong><small>Архив TAR.GZ</small></span>
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 17v3h14v-3"/></svg>
+        </a>
+      </div>
+      <div class="download-links">
+        <a href="https://github.com/pioner14/kovetz/releases">Все версии на GitHub</a>
+        <a href="guide/index.html#install">Как разрешить установку из браузера на Android</a>
+      </div>
+    </div>
+  </section>
+  <section id="support" class="section band">
+    <div class="container feature-callout">
+      <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6c-2-2-6-2-8 1-2-3-6-3-8-1-3 4 2 8 8 13 6-5 11-9 8-13Z"/></svg></span>
+      <div>
+        <h2>Бесплатно, и всегда будет бесплатной</h2><p>Kovetz делает один человек в свободное время. Программа бесплатная и без рекламы. Если она вам помогла, можно по желанию поддержать разработку или угостить меня кофе.</p>
+        <div class="actions">
+          <a class="button primary" href="https://paypal.me/NikolaiGolotaistrov/5EUR">Угостить кофе · 5 €</a>
+          <a class="button" href="https://paypal.me/NikolaiGolotaistrov">Своя сумма</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq" class="section">
+    <div class="container faq">
+      <h2>Вопросы и ответы</h2>
+      <details name="faq"><summary>Заметки пропали после восстановления резервной копии. Что делать?</summary><p>Восстановление в JW Library заменяет данные на устройстве. Если заметки сохранились в старых копиях, соберите их в одну с помощью Kovetz и восстановите объединённую копию.</p></details>
+      <details name="faq"><summary>Нужен ли интернет?</summary><p>Он нужен для скачивания программы и проверки обновлений по желанию. Объединение и экспорт работают без интернета.</p></details>
+      <details name="faq"><summary>Безопасно ли это для исходных копий?</summary><p>Kovetz сохраняет результат отдельным файлом, оставляя исходные копии без изменений. Перед восстановлением всё равно сделайте свежую копию устройства.</p></details>
+      <details name="faq"><summary>Что будет, если одна заметка изменена на двух устройствах?</summary><p>В объединённую копию попадёт более свежая версия, а вторая сохранится в отчёте.</p></details>
+      <details name="faq"><summary>Вернутся ли заметки, которые я удалял?</summary><p>Да, если удалённая заметка осталась в одной из копий, которые вы добавили для объединения.</p></details>
+      <details name="faq"><summary>Какие копии подходят?</summary><p>Подходят файлы .jwlibrary с разных устройств, в том числе копии, сделанные в разные годы.</p></details>
+      <details name="faq"><summary>Можно ли вернуть заметки в JW Library из PDF или Obsidian?</summary><p>Чтобы вернуть заметки в JW Library, восстановите объединённую копию .jwlibrary. Экспорт в PDF и Obsidian предназначен для чтения и поиска.</p></details>
+      <details name="faq"><summary>Сколько стоит Kovetz?</summary><p>Программа бесплатная. Исходный код доступен по лицензии MIT.</p></details>
+      <details name="faq"><summary>Это официальная программа JW Library?</summary><p>Kovetz — независимая программа, которая не связана с JW Library и её разработчиками.</p></details>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-links">
+      <span>© 2026 Nikolai Golotaistrov</span>
+      <a href="../LICENSE.txt">Лицензия MIT</a>
+      <a href="https://github.com/pioner14/kovetz">Исходный код на GitHub</a>
+    </div>
+    <p>Kovetz — независимая программа. Она не связана с JW Library и её разработчиками.</p>
+  </div>
+</footer>
+</body>
+</html>

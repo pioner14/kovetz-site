@@ -1,0 +1,21 @@
+{
+  "name": "Kovetz",
+  "short_name": "Kovetz",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#376754",
+  "background_color": "#F7F7F3",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

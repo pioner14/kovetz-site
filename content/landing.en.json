@@ -1,0 +1,105 @@
+{
+  "seo": {
+    "title": "Kovetz — merge JW Library notes from your phone, tablet, and computer",
+    "description": "Merge JW Library backups from multiple devices and export your notes to PDF or Obsidian. Kovetz is free, ad-free, and works offline.",
+    "tagline": "Bring all your study notes into one backup."
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "languages": "Site language",
+    "theme": "Color theme",
+    "themes": ["System", "Light", "Dark"],
+    "features": "Features",
+    "steps": "How it works",
+    "guide": "Guide",
+    "download": "Download",
+    "faq": "FAQ",
+    "support": "Support",
+    "license": "MIT license",
+    "source": "Source code on GitHub",
+    "disclaimer": "Kovetz is an independent program, not affiliated with JW Library or its developers.",
+    "contents": "Contents",
+    "top": "Back to the top of the guide",
+    "tip": "Tip",
+    "warning": "Important"
+  },
+  "hero": {
+    "title": "All your JW Library notes — in one place",
+    "text": "Your phone, tablet, and computer each hold different study notes. Kovetz brings them into one backup you can restore in JW Library.",
+    "download": "Download for free",
+    "chips": ["Android · Windows · Linux", "Free", "Ad-free", "Works offline"],
+    "alt": "Kovetz screen showing a completed merge of JW Library backups",
+    "homeAlt": "Kovetz home screen"
+  },
+  "problem": {
+    "title": "Your study gems are scattered across devices",
+    "text": "As you read and study, different notes build up on your phone, tablet, and computer. Restoring a backup in JW Library replaces the notes on that device with the notes from that backup.",
+    "devices": ["Phone", "Tablet", "Computer"],
+    "result": "Merged backup",
+    "diagramAlt": "Kovetz brings backups from a phone, tablet, and computer into one file"
+  },
+  "solution": {
+    "title": "Kovetz brings your study notes together",
+    "text": "Add backups from different devices, even ones made years apart. Kovetz merges notes, highlights, bookmarks, favorites, and answers into a single .jwlibrary file.",
+    "points": ["Different notes are kept together.", "If you edited a note in two places, the merged backup keeps the newer version and the report preserves the other.", "You can restore the merged backup in JW Library on the device of your choice."]
+  },
+  "features": {
+    "title": "Keep your notes and read them where you like",
+    "cards": [
+      {"title": "Keep your original backups", "text": "Kovetz saves the result as a separate file and reports anything it could not transfer. Even backups from 2019 are supported."},
+      {"title": "Read outside the app", "text": "Save notes as a PDF book with a table of contents by tag and page numbers. Read it on screen or print it."},
+      {"title": "Take your notes to Obsidian", "text": "Get one Markdown file per note, index pages by tag, and internal links that are ready to use."}
+    ]
+  },
+  "steps": {
+    "title": "Three simple steps",
+    "guide": "See the illustrated guide",
+    "cards": [
+      {"title": "Choose your backups", "text": "Select “Choose files” and add backups from your phone, tablet, and computer.", "alt": "Two JW Library backup files selected for merging"},
+      {"title": "Select “Merge”", "text": "Review the merge rules. Kovetz reads your backups and combines them into one file.", "alt": "Conflict resolution options for merging two backups"},
+      {"title": "Save the result", "text": "Restore the merged file in JW Library, or choose “Export notes” and select PDF or Obsidian.", "alt": "Export screen with choices for a PDF book or an Obsidian folder"}
+    ]
+  },
+  "export": {
+    "title": "Notes you can read anywhere",
+    "pdf": {"title": "PDF book", "text": "Find the right page using the table of contents by tag. Within each tag, sort notes by source or date. The PDF supports Cyrillic and Armenian text.", "coverAlt": "Cover of a PDF book of exported notes", "pageAlt": "Sample page from a PDF book with notes and a page number"},
+    "obsidian": {"title": "Obsidian folder", "text": "Each note gets its own Markdown file with the source in its properties. Tag pages link to the matching notes, and the main index helps you find your way around.", "tree": ["My notes/", "Index.md", "Tags/", "Hope.md", "Notes/", "Romans 15-13.md"]}
+  },
+  "privacy": {
+    "title": "Runs on your device",
+    "text": "Your backups and notes are processed on your device. Kovetz connects to GitHub only if you choose to check for updates. You can use the app without an account."
+  },
+  "guide": {
+    "title": "Easy to follow at any age",
+    "text": "The guide walks you through one step at a time, with large screenshots that show exactly where to click or tap. Read it on the site or print a copy.",
+    "action": "Open the user guide"
+  },
+  "download": {
+    "title": "Download Kovetz",
+    "version": "Version",
+    "formats": ["APK installer", "ZIP archive", "TAR.GZ archive"],
+    "all": "All releases on GitHub",
+    "note": "How to allow installation from your browser on Android"
+  },
+  "support": {
+    "title": "Free, and always will be",
+    "text": "One person builds Kovetz in his spare time. The app is free and ad-free. If it helped you, you can make an optional donation to support development or buy me a coffee.",
+    "coffee": "Buy me a coffee · €5",
+    "custom": "Choose an amount"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {"question": "My notes disappeared after restoring a backup. What can I do?", "answer": "Restoring in JW Library replaces the data on your device. If older backups still contain your notes, merge them with Kovetz and restore the combined file."},
+      {"question": "Do I need an internet connection?", "answer": "You only need it to download Kovetz and to check for updates if you choose. Merging and exporting work offline."},
+      {"question": "Is it safe for my original backups?", "answer": "Kovetz writes the result to a separate file and leaves your original backups untouched. Always make a fresh backup of your device before restoring."},
+      {"question": "What happens if I edit the same note on two devices?", "answer": "The merged backup keeps the newer version and saves the other version in the report."},
+      {"question": "Will notes I deleted come back?", "answer": "Yes, if a deleted note still exists in one of the backups you added to the merge."},
+      {"question": "Which backups can I use?", "answer": "Kovetz accepts .jwlibrary files from different devices, including backups made in different years."},
+      {"question": "Can I import notes back into JW Library from PDF or Obsidian?", "answer": "Restore the merged .jwlibrary backup to bring notes back into JW Library. PDF and Obsidian exports are for reading and searching."},
+      {"question": "How much does Kovetz cost?", "answer": "Kovetz is free. Its source code is available under the MIT license."},
+      {"question": "Is Kovetz an official JW Library app?", "answer": "Kovetz is an independent program, not affiliated with JW Library or its developers."}
+    ]
+  }
+}

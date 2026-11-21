@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kovetz user guide · Kovetz</title>
+  <meta name="description" content="Begin with “Save your backups first”. Take it one step at a time. Your original files always stay as they were.">
+  <link rel="canonical" href="https://pioner14.github.io/kovetz-site/en/guide/">
+    <link rel="alternate" hreflang="ru" href="https://pioner14.github.io/kovetz-site/ru/guide/">
+    <link rel="alternate" hreflang="en" href="https://pioner14.github.io/kovetz-site/en/guide/">
+    <link rel="alternate" hreflang="x-default" href="https://pioner14.github.io/kovetz-site/ru/guide/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kovetz">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Kovetz user guide · Kovetz">
+  <meta property="og:description" content="Begin with “Save your backups first”. Take it one step at a time. Your original files always stay as they were.">
+  <meta property="og:url" content="https://pioner14.github.io/kovetz-site/en/guide/">
+  <meta property="og:image" content="https://pioner14.github.io/kovetz-site/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kovetz">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kovetz user guide · Kovetz">
+  <meta name="twitter:description" content="Begin with “Save your backups first”. Take it one step at a time. Your original files always stay as they were.">
+  <meta name="twitter:image" content="https://pioner14.github.io/kovetz-site/og.png">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="stylesheet" href="../../style.css">
+  <script src="../../site.js" defer></script>
+
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"><img src="../../favicon.svg" alt="Kovetz" width="40" height="40" loading="eager"><span aria-hidden="true">Kovetz</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html#features">Features</a>
+      <a href="../index.html#steps">How it works</a>
+      <a href="index.html" aria-current="page">Guide</a>
+      <a href="../index.html#download">Download</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../index.html#support">Support</a>
+    </nav>
+    <div class="header-controls">
+      <nav class="language-switch" aria-label="Site language">
+        <a href="../../ru/guide/index.html" lang="ru" hreflang="ru" aria-label="Русский">RU</a>
+        <a href="../../en/guide/index.html" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
+      </nav>
+      <label class="theme-control" title="Color theme" hidden>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a8 8 0 1 0 0 16V4Z M12 4a8 8 0 0 1 0 16"/></svg>
+        <select data-theme-select aria-label="Color theme">
+          <option value="auto">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Dark" aria-pressed="false" title="Color theme" hidden>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a8 8 0 1 0 0 16V4Z M12 4a8 8 0 0 1 0 16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="container guide-layout" id="main" tabindex="-1">
+  <div class="guide-intro">
+    <h1>Kovetz user guide</h1>
+    <p class="lede">Begin with “Save your backups first”. Take it one step at a time. Your original files always stay as they were.</p>
+  </div>
+  <nav class="contents card" aria-labelledby="contents-title">
+    <h2 id="contents-title">Contents</h2>
+    <ol>
+      <li><a href="#what">What the app does</a></li>
+      <li><a href="#install">Install and update</a></li>
+      <li><a href="#main_screen">Home screen and menu</a></li>
+      <li><a href="#safety">Save your backups first</a></li>
+      <li><a href="#merge">How to merge backups</a></li>
+      <li><a href="#restore">How to restore in JW Library</a></li>
+      <li><a href="#export">How to export notes</a></li>
+      <li><a href="#settings">Language, theme and updates</a></li>
+      <li><a href="#problems">If something goes wrong</a></li>
+      <li><a href="#privacy">Where your data stays</a></li>
+      <li><a href="#words">Words in this guide</a></li>
+    </ol>
+  </nav>
+  <div class="guide-chapters">
+    <section id="what" aria-labelledby="what-title">
+  <h2 id="what-title">What the app does</h2>
+  <p class="chapter-summary">Kovetz helps you bring your JW Library records together in one place.</p>
+  <p>You may have some notes on your phone and others on your tablet. Kovetz reads the saved copies from those devices and makes one new copy. It can bring together notes, tags, highlights, bookmarks, favourites, answers and playlists.</p>
+  <p>You can also save notes as a file to read or in a folder for Obsidian. To put your records back into JW Library, restore the backup in JW Library itself.</p>
+  <ul><li>Use an Android phone or a Windows or Linux computer.</li><li>Merging needs at least two different JW Library backups. Saving notes needs only one backup with tagged notes.</li><li>Leave some free space for the new backup and its report.</li></ul>
+  <aside class="tip"><p><strong>Tip.</strong> You can work with saved backups offline. Kovetz does not replace JW Library or move downloaded publications, and it never changes your original files.</p></aside>
+</section>
+    <section id="install" aria-labelledby="install-title">
+  <h2 id="install-title">Install and update</h2>
+  <p class="chapter-summary">Follow the steps for your phone or computer.</p>
+  <article class="step card">
+  <h3><span class="step-number">1</span> Android · Open the release page</h3>
+  <p>Open the Kovetz releases page on <a href="https://github.com/pioner14/kovetz/releases">GitHub</a>. In the latest release’s Assets list, choose the Android APK.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> Android · Open the downloaded file</h3>
+  <p>Wait for the download and tap the file. If the phone asks for permission, open the suggested settings and allow installs from this source.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> Android · Install the app</h3>
+  <p>Return to the installer and tap “Install”. When “Open” appears, tap it.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> Windows · Download the ZIP</h3>
+  <p>On the Kovetz releases page on <a href="https://github.com/pioner14/kovetz/releases">GitHub</a>, choose the Windows ZIP. Find the downloaded file in your Downloads folder.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> Windows · Extract the files</h3>
+  <p>Right-click the ZIP and choose “Extract All”. Open the folder that was created.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">6</span> Windows · Start Kovetz</h3>
+  <p>Double-click “kovetz.exe” in that folder. Leave the other files beside it.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">7</span> Linux · Download the archive</h3>
+  <p>On the Kovetz releases page on <a href="https://github.com/pioner14/kovetz/releases">GitHub</a>, choose the Linux archive. Its name ends in .tar.gz.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">8</span> Linux · Unpack the archive</h3>
+  <p>In Downloads, right-click the archive. Choose “Extract Here” or a similar option.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">9</span> Linux · Start Kovetz</h3>
+  <p>Open the extracted folder and then its “bundle” folder. Run “kovetz” and leave the “data” and “lib” folders beside it.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">10</span> Update · Check the version</h3>
+  <p>Open the menu, choose “Updates” and then “Check for updates”. Wait for the reply.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">11</span> Update · Get the new file</h3>
+  <p>If a new version appears, press “Download” or “Release page”. On the release page, choose the file for your device on <a href="https://github.com/pioner14/kovetz/releases">GitHub</a>.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">12</span> Update · Open the new version</h3>
+  <p>On Android, open the new APK and confirm the update. On a computer, close the old app, unpack the new version into a different folder and run it from there.</p>
+  
+</article>
+</section>
+    <section id="main_screen" aria-labelledby="main_screen-title">
+  <h2 id="main_screen-title">Home screen and menu</h2>
+  <p class="chapter-summary">The home screen lets you get started or change how the app looks.</p>
+  <article class="step card">
+  <h3><span class="step-number">1</span> Find the card you need</h3>
+  <p>Press “Merge backups” for one combined copy or “Export notes” to read your notes outside JW Library. For settings, press the button with three lines.</p>
+  <figure><img src="../../guide/en/home.png" alt="Find the card you need" width="780" height="1688" loading="lazy"><figcaption>1 — “Merge backups”. 2 — “Export notes”. 3 — menu button. 4 — language button.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> Open the menu</h3>
+  <p>Press the button with three lines. Choose the row you need, such as “How to use”, or press “Home” to close the menu.</p>
+  <figure><img src="../../guide/en/drawer.png" alt="Open the menu" width="780" height="1688" loading="lazy"><figcaption>1 — “Merge backups”. 2 — “Export notes”. 3 — “Language”. 4 — “Updates”. 5 — “How to use”.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> Choose a language</h3>
+  <p>Press the language button at the top or “Language” in the menu. In “App language”, press the row you want.</p>
+  <figure><img src="../../guide/en/language_dialog.png" alt="Choose a language" width="780" height="1688" loading="lazy"><figcaption>1 — “System default”, the device language. 2 — “Русский”, Russian. 3 — “English”.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> Choose a theme</h3>
+  <p>Open the menu and press “Theme”. Choose “Light”, “Dark” or “System” to follow the device setting.</p>
+  <figure><img src="../../guide/en/theme_dialog.png" alt="Choose a theme" width="780" height="1688" loading="lazy"><figcaption>1 — “System”. 2 — “Light”. 3 — “Dark”.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> See information about the app</h3>
+  <p>In the menu, press “About”. To copy the project address, press “Source code — GitHub”. Paste it into your browser to open the page.</p>
+  <figure><img src="../../guide/en/about.png" alt="See information about the app" width="780" height="1688" loading="lazy"><figcaption>1 — “Developer”, the author’s name. 2 — “Source code — GitHub”, the row that copies the link.</figcaption></figure>
+</article>
+</section>
+    <section id="safety" aria-labelledby="safety-title">
+  <h2 id="safety-title">Save your backups first</h2>
+  <p class="chapter-summary">A fresh backup lets you get your phone’s records back if you want to go back.</p>
+  <aside class="warning"><p><strong>Important.</strong> Restoring in JW Library replaces the personal records on that device with the records from the chosen backup. A new note that is missing from the backup may disappear from the phone. Start with a fresh backup.</p></aside>
+  <article class="step card">
+  <h3><span class="step-number">1</span> Open “My Notes”</h3>
+  <p>Open JW Library on your phone. Go to “My Notes”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> Open the backup menu</h3>
+  <p>Tap the cloud icon with an arrow. Choose the option to create a backup.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> Save the phone backup</h3>
+  <p>Choose to save to a file if your phone offers several choices. Pick a folder you can find again and confirm the save.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> Make sure the file is there</h3>
+  <p>Open the folder in your files app. Remember the file name and where you saved it.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> Back up the other devices</h3>
+  <p>Repeat these steps on your tablet and any other device with records you want. If you merge on a computer, copy each file there, for example with a cable.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">6</span> Keep your original backups</h3>
+  <p>Keep the files made by JW Library somewhere safe. Keep them after the merge too.</p>
+  
+</article>
+</section>
+    <section id="merge" aria-labelledby="merge-title">
+  <h2 id="merge-title">How to merge backups</h2>
+  <p class="chapter-summary">Three screens help you choose files, set the rules and save the result.</p>
+  <article class="step card">
+  <h3><span class="step-number">1</span> Files · Start the merge</h3>
+  <p>On the home screen, press “Merge backups”. On “Files”, press “Choose files”.</p>
+  <figure><img src="../../guide/en/merge_files_empty.png" alt="Files · Start the merge" width="780" height="1688" loading="lazy"><figcaption>1 — “Choose files”. 2 — back arrow to leave this screen.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> Files · Add two or more backups</h3>
+  <p>Select at least two different JW Library backup files ending in .jwlibrary. If you selected only one, press “Choose files” again to add another.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> Files · Choose the primary backup</h3>
+  <p>Press the star marked “Primary” under the file you want to give priority. That file sets the order of favourites and gets first choice of bookmark slots.</p>
+  <figure><img src="../../guide/en/merge_files_two.png" alt="Files · Choose the primary backup" width="780" height="1688" loading="lazy"><figcaption>1 — “Primary”. 2 — “Remove file” cross. 3 — “Next”.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> Files · Check the list and go on</h3>
+  <p>If you added the wrong file, press the cross beside it. If you leave all stars unselected, the app uses the newest backup as the primary one. Press “Next”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> Rules · Choose which note version to keep</h3>
+  <p>In “Notes with the same ID”, press “Newest version” or “From the primary backup”. This rule applies when the same note was changed in different ways.</p>
+  <figure><img src="../../guide/en/merge_rules.png" alt="Rules · Choose which note version to keep" width="780" height="1688" loading="lazy"><figcaption>1 — “Newest version” for notes. 2 — “From the primary backup” for answers. 3 — “Merge”.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">6</span> Rules · Choose which answers to keep</h3>
+  <p>In “Publication answers”, press “From the primary backup” or “From the newest backup”. The second choice uses the date of the whole backup.</p>
+  
+</article>
+  <aside class="tip"><p><strong>Tip.</strong> If you are unsure, keep the suggested choices. Different notes stay separate, and you can read differing versions of a note or an answer in the report.</p></aside>
+  <article class="step card">
+  <h3><span class="step-number">7</span> Rules · Start merging</h3>
+  <p>Press “Merge”. The app opens “Result” and starts working.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">8</span> Result · Wait or cancel</h3>
+  <p>While the circle moves, wait. To stop, press “Cancel” and wait for it to finish stopping. Your original files stay as they were.</p>
+  <figure><img src="../../guide/en/merge_progress.png" alt="Result · Wait or cancel" width="780" height="1688" loading="lazy"><figcaption>1 — “Cancel”. 2 — the moving circle that shows work is in progress.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">9</span> Result · Look at what was saved</h3>
+  <p>When you see “Done”, look at the counts under the heading. If there is a yellow “Review … records” message, save the result and read the report before restoring.</p>
+  <figure><img src="../../guide/en/merge_done.png" alt="Result · Look at what was saved" width="780" height="1688" loading="lazy"><figcaption>1 — counts of saved records. 2 — “Save backup and report”. 3 — “Export notes from the result”. 4 — “Merge again”.</figcaption></figure>
+</article>
+  <aside class="warning"><p><strong>Important.</strong> The yellow message means some records need attention. For example, a bookmark slot may have been full or a playlist file may have been missing. The report explains what happened.</p></aside>
+  <article class="step card">
+  <h3><span class="step-number">10</span> Result · Save on your device</h3>
+  <p>Press “Save backup and report”. On Android, choose a folder and confirm. On a computer, choose a folder and a name for the new backup, then press “Save”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">11</span> Result · Find both files</h3>
+  <p>Open the chosen folder and look for the new .jwlibrary backup and its .report.txt report. If you saw a warning, open the report as a plain text file.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">12</span> Result · Continue if you need to</h3>
+  <p>To save notes separately, press “Export notes from the result”. To choose your files or rules again, press “Merge again”.</p>
+  
+</article>
+  <aside class="tip"><p><strong>Tip.</strong> If you close the folder picker, the result stays on the screen. On Android, previously saved files stay in place. On a computer, if the names match, you can cancel replacement and choose a new name.</p></aside>
+</section>
+    <section id="restore" aria-labelledby="restore-title">
+  <h2 id="restore-title">How to restore in JW Library</h2>
+  <p class="chapter-summary">Make sure you have a fresh phone backup before restoring the combined one.</p>
+  <article class="step card">
+  <h3><span class="step-number">1</span> Check your phone backup</h3>
+  <p>Make sure you have a fresh file from “Save your backups first”. Restoring replaces the personal JW Library records on this phone.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> Find the merged backup on your phone</h3>
+  <p>If the merged backup is on a computer, copy it to the phone, for example with a cable. Restore the .jwlibrary backup itself and keep the TXT report beside it if you wish.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> Open the backup menu</h3>
+  <p>Open JW Library and go to “My Notes”. Tap the cloud icon with an arrow and choose “Restore”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> Choose the merged backup</h3>
+  <p>Choose the merged backup from the folder where you saved it. If your phone opened the file directly in JW Library, wait for the restore prompt.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> Confirm the restore</h3>
+  <p>Check that you picked the right file. Confirm the restore and wait for it to finish.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">6</span> Check familiar records</h3>
+  <p>Open “My Notes” and find a familiar note from each device. Check a few important tags, bookmarks or highlights too.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">7</span> If JW Library says the saved data is damaged</h3>
+  <p>Check that you opened the merged backup and that the whole file was copied. If it still fails, merge the originals again in a current version of Kovetz and save under a new name.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">8</span> Go back to your phone’s records if needed</h3>
+  <p>If the merged backup is not right for you, use the same steps to restore the phone’s own fresh backup. If the merged backup still fails, write down the error and the Kovetz version from “About” for the developer.</p>
+  
+</article>
+</section>
+    <section id="export" aria-labelledby="export-title">
+  <h2 id="export-title">How to export notes</h2>
+  <p class="chapter-summary">You can save your notes as a folder to read or as a book.</p>
+  <p>The app saves the words you wrote in your notes. By default, it includes only notes with tags. Highlights, bookmarks and publication text are left out of the export.</p>
+  <article class="step card">
+  <h3><span class="step-number">1</span> Overview · Open a backup</h3>
+  <p>On the home screen, press “Export notes”, then “Choose a backup”. Choose the JW Library file and wait for the list.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> Overview · Or use the merged backup</h3>
+  <p>On the “Done” screen, press “Export notes from the result”. If you opened a regular backup and want a different one, press “Change”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> Overview · Find a note</h3>
+  <p>Press “Search notes” and type a word. Press a tag below the search box to see notes with that label.</p>
+  <figure><img src="../../guide/en/export_overview.png" alt="Overview · Find a note" width="780" height="1688" loading="lazy"><figcaption>1 — “Search notes”. 2 — the first tag and its note count. 3 — the first note card. 4 — “Export”.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> Overview · Go to export</h3>
+  <p>To clear the search, press the “Clear” cross, and to clear a tag filter, press the same tag again. Press “Export”. Search and tag choices only change the list you see.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> Markdown · Choose the format</h3>
+  <p>Press “Markdown for Obsidian”. If you also want untagged notes, turn on “Include notes without tags”.</p>
+  <figure><img src="../../guide/en/export_format.png" alt="Markdown · Choose the format" width="780" height="1688" loading="lazy"><figcaption>1 — “Markdown for Obsidian”. 2 — “PDF”. 3 — “Include notes without tags”. 4 — “Create”.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">6</span> Markdown · Save the export</h3>
+  <p>Press “Create”. On a computer, choose where to make the new folder, or on Android choose where to save the ZIP.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">7</span> Markdown · Unzip on your phone</h3>
+  <p>On Android, find the ZIP in your files app. Open it and choose “Extract” or a similar button. On a computer, the folder is already ready.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">8</span> Markdown · Open the folder in Obsidian</h3>
+  <p>Open Obsidian and choose “Open folder as vault”. Pick the whole export folder, the one that contains “Index”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">9</span> Markdown · Open “Index”</h3>
+  <p>Press “Index” to browse the tags. “Notes” has one file per note, and “Tags” has lists of notes by topic.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">10</span> PDF · Choose the book</h3>
+  <p>On the format screen, press “PDF”. For an “Untagged” section in the book, turn on “Include notes without tags”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">11</span> PDF · Choose the order and save the book</h3>
+  <p>Under “Order inside a tag”, press “By Bible and publication” or “By date”, from older notes to newer ones. Press “Create”. Wait for the save window and choose where to put the file.</p>
+  <figure><img src="../../guide/en/export_pdf_options.png" alt="PDF · Choose the order and save the book" width="780" height="1688" loading="lazy"><figcaption>1 — the two choices for the order inside a tag. 2 — “Create”.</figcaption></figure>
+</article>
+  <aside class="tip"><p><strong>Tip.</strong> A book of about 1,700 notes can take around 10 seconds to make. It may take longer on a slower device.</p></aside>
+  <article class="step card">
+  <h3><span class="step-number">12</span> PDF · Open the cover and contents</h3>
+  <p>Open the saved PDF. To go to a topic, press the tag name in “Contents by tag” or find the page yourself.</p>
+  <figure><img src="../../guide/en/pdf_cover.png" alt="PDF · Open the cover and contents" width="579" height="819" loading="lazy"><figcaption>1 — the book title on the cover. 2 — the contents with the list of tags.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">13</span> PDF · Read the notes for a topic</h3>
+  <p>Scroll through the pages for your topic. There are no buttons to press on this book page. If a note has several tags, it is printed once in each of those sections.</p>
+  <figure><img src="../../guide/en/pdf_page.png" alt="PDF · Read the notes for a topic" width="579" height="819" loading="lazy"><figcaption>1 — the tag name. 2 — the note text. You can simply read here.</figcaption></figure>
+</article>
+  <aside class="tip"><p><strong>Tip.</strong> Every PDF page has a «Table of contents» button at the bottom and a button with the current tag name. After jumping through a link, press «Table of contents» to return to the top. The tags are also listed in the bookmarks panel of your PDF reader.</p></aside>
+</section>
+    <section id="settings" aria-labelledby="settings-title">
+  <h2 id="settings-title">Language, theme and updates</h2>
+  <p class="chapter-summary">You can change the settings whenever you like.</p>
+  <article class="step card">
+  <h3><span class="step-number">1</span> Set the language</h3>
+  <p>Open the menu and press “Language”. In “App language”, press “Русский”, “English” or “System default”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> Set the theme</h3>
+  <p>Open the menu and press “Theme”. Choose “Light”, “Dark” or “System”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> Check for updates yourself</h3>
+  <p>Open the menu and press “Updates”. Press “Check for updates” and wait.</p>
+  <figure><img src="../../guide/en/updates.png" alt="Check for updates yourself" width="780" height="1688" loading="lazy"><figcaption>1 — “Check for updates”. 2 — the “Check automatically” switch.</figcaption></figure>
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> Read the answer</h3>
+  <p>If it says “You have the latest version”, you can carry on. If a new version is available, press “Download” or “Release page” and go back to “Install and update”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> Turn start-up checks on or off</h3>
+  <p>Press “Check automatically” if you want a check at start-up once a day. It starts off. To check only when you ask, turn it off again.</p>
+  
+</article>
+  <p>Kovetz only asks GitHub for a list of published versions. The check does not send your files, notes or device details.</p>
+</section>
+    <section id="problems" aria-labelledby="problems-title">
+  <h2 id="problems-title">If something goes wrong</h2>
+  <p class="chapter-summary">Find the message or situation you recognise and try the step beside it.</p>
+  <p>A file name may appear before the message. It tells you which backup to check.</p>
+  <article class="step card">
+  <h3><span class="step-number">1</span> “Could not read the file as a JW Library backup”</h3>
+  <p>It may be the wrong kind of file or an incomplete copy. Take a backup made by JW Library and copy it again.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">2</span> “The database version disagrees with the backup manifest”</h3>
+  <p>Two parts of the file disagree about its format. Make a fresh backup in JW Library and add it.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">3</span> “Unrecognized structure of table”</h3>
+  <p>The app found an unfamiliar way of storing records. Check for updates and, if the error returns, write down the full message for the developer.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">4</span> “Backup schema version … is currently unsupported”</h3>
+  <p>The app cannot read this kind of backup yet. Keep it and try a fresh backup from an updated JW Library.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">5</span> “The backup database references missing records”</h3>
+  <p>Some records point to other records that are missing from the file. Choose a working original backup from that device.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">6</span> “The database failed its integrity check”</h3>
+  <p>The records inside the file did not pass a check. Copy the original again or make a fresh backup in JW Library.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">7</span> “The backup contents do not match its checksum”</h3>
+  <p>A check found that the contents differ from what was saved. Copy the original file again or make a fresh backup.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">8</span> “The backup is too large or contains too many files”</h3>
+  <p>The app stopped because of the size of the backup. If you have a smaller original with the records you need, try it and keep the large one.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">9</span> “The recovery report inside this earlier merge result is damaged”</h3>
+  <p>The app cannot read the report inside an older result. Choose the backups made by JW Library itself.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">10</span> “A media file referenced by a playlist is missing”</h3>
+  <p>A file used by a playlist is missing from the backup. Add a fresh backup from a device that still has the file.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">11</span> “Could not read or write a file”</h3>
+  <p>Check that the file is available on the device and that the save folder has room. Try again or choose a different folder.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">12</span> “Merge cancelled”</h3>
+  <p>The app stopped after you pressed “Cancel”. To start again, go back to the rules and press “Merge”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">13</span> “Internal error”</h3>
+  <p>Something went wrong inside the app, and your original files stayed as they were. Try once more and, if it happens again, write down the message and the app version for the developer.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">14</span> “Add at least two different backups”</h3>
+  <p>One file or two copies of the same backup are not enough. Press “Choose files” and add a different JW Library backup.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">15</span> “Could not merge the backups”</h3>
+  <p>For example, the chosen primary backup may be unavailable. Go back to the list, check the files and pick “Primary” again under the backup you want.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">16</span> The button is grey</h3>
+  <p>For “Next”, add two different backups, and for “Export”, use a backup with at least one tagged note. If the app is still reading or saving, wait for it to finish.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">17</span> You added the wrong file</h3>
+  <p>Go back to “Files” and press the “Remove file” cross beside the wrong name. If needed, add the right backup with “Choose files”.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">18</span> The screen shows a previous result</h3>
+  <p>If you changed the language, files or rules, press “Merge again”. Check the list and rules, then press “Merge” to enable saving or exporting again.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">19</span> “Cannot reach GitHub”</h3>
+  <p>Check your connection and press “Check for updates” again later. You can still merge backups and export notes while offline.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">20</span> You cancelled the folder or file picker</h3>
+  <p>If you closed the save window, press “Save backup and report” again, or “Create” for notes. If you closed the backup picker, open it again when ready.</p>
+  
+</article>
+  <article class="step card">
+  <h3><span class="step-number">21</span> The files could not be saved</h3>
+  <p>Check the free space and pick a different folder or a new name. If the app warns that files may be incomplete, use the new result only after it confirms a successful save.</p>
+  
+</article>
+</section>
+    <section id="privacy" aria-labelledby="privacy-title">
+  <h2 id="privacy-title">Where your data stays</h2>
+  <p class="chapter-summary">Your files are processed on your phone or computer.</p>
+  <p>The original files stay where you put them. The new backup, report and exported notes go where you choose to save them. The report can also contain personal text.</p>
+  <p>The app uses the internet only to check for updates. It asks GitHub for the list of releases. It does not send backups, notes or device details.</p>
+  <p>While working, the app makes temporary copies in its own area on the device. It removes them after use. If work was interrupted, it tries to clear the leftovers at the next start.</p>
+</section>
+    <section id="words" aria-labelledby="words-title">
+  <h2 id="words-title">Words in this guide</h2>
+  <p class="chapter-summary">Here are short explanations for words you may see on the screen.</p>
+  <ul><li>Backup. A file in which JW Library saves your records so you can bring them back later.</li><li>Merge. Bring records from several backups together into one new backup.</li><li>Primary backup. The starred copy that sets the order of favourites and gets first choice of bookmark slots.</li><li>Note. Something you wrote for yourself.</li><li>Tag. A short topic label, such as “Family”. It helps you find notes about the same thing.</li><li>Highlight. A place in the text you marked with colour.</li><li>Bookmark. A mark for a place you want to come back to.</li><li>Report. A text file beside the merged backup. It tells you what was saved and what needs a look.</li><li>Markdown. A simple kind of text file that uses marks for headings, lists and links.</li><li>Obsidian. An app for reading and organising notes in a folder.</li><li>PDF. A file with pages you can read and print like a book.</li><li>Release. A version of the app that the developer has put up for download.</li></ul>
+</section>
+    <p class="back-top"><a href="#main">Back to the top of the guide</a></p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-links">
+      <span>© 2026 Nikolai Golotaistrov</span>
+      <a href="../../LICENSE.txt">MIT license</a>
+      <a href="https://github.com/pioner14/kovetz">Source code on GitHub</a>
+    </div>
+    <p>Kovetz is an independent program, not affiliated with JW Library or its developers.</p>
+  </div>
+</footer>
+</body>
+</html>
