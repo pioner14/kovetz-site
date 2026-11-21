@@ -1,0 +1,52 @@
+# Kovetz
+
+> Free app for JW Library users (Jehovah's Witnesses): merge backups from all your devices and export notes to PDF or Obsidian. Android, Windows, Linux.
+
+Kovetz is a free, open-source (MIT) app for people who use the JW Library app, including Jehovah's Witnesses. It merges `.jwlibrary` backups from several devices into one, never changes the original files, and exports notes to a PDF book or to Markdown for Obsidian. Runs offline on Android (arm64), Windows 10+ and Linux. Independent: not affiliated with JW Library or its developers. Author: Nikolai Golotaistrov.
+
+## Pages
+- [English home](https://pioner14.github.io/kovetz-site/en/): overview, downloads, FAQ
+- [English user guide](https://pioner14.github.io/kovetz-site/en/guide/): step-by-step guide
+- [Русская главная](https://pioner14.github.io/kovetz-site/ru/): обзор, скачивание, вопросы
+- [Русское руководство](https://pioner14.github.io/kovetz-site/ru/guide/): пошаговое руководство
+- [Source code and releases](https://github.com/pioner14/kovetz)
+
+## Facts
+- Version: 0.6.3 (updated 2026-11-21)
+- Languages: Russian, English
+- Price: free, no ads, no account; internet only for an optional update check
+- Alternatives mentioned in the docs: JWLMerge (unmaintained since 2023), Library Merger (iOS/macOS), go-jwlm (command line), JWLManager
+
+## FAQ (English)
+- How do I merge JW Library notes from my phone and tablet? Make a backup in JW Library on each device, copy the .jwlibrary files to one device, add them to Kovetz and press “Merge”. Then restore the result in JW Library.
+- How do I move my JW Library notes to a new phone? Make a backup on the old phone and, if needed, merge it with the backups from your other devices in Kovetz. Then restore the resulting file on the new phone.
+- Does JW Library sync notes between devices officially? According to the help pages on jw.org, notes, tags, highlights and bookmarks are not synchronized between devices automatically. A backup can be restored on another device, but it replaces that device's data. Kovetz helps you merge backups.
+- My notes disappeared after restoring a backup. What can I do? Restoring in JW Library replaces the data on your device. If older backups still contain your notes, merge them with Kovetz and restore the combined file.
+- Do I need an internet connection? You only need it to download Kovetz and to check for updates if you choose. Merging and exporting work offline.
+- Is it safe for my original backups? Kovetz writes the result to a separate file and leaves your original backups untouched. Always make a fresh backup of your device before restoring.
+- What happens if I edit the same note on two devices? The merged backup keeps the newer version and saves the other version in the report.
+- Will notes I deleted come back? Yes, if a deleted note still exists in one of the backups you added to the merge.
+- Which backups can I use? Kovetz accepts .jwlibrary files from different devices, including backups made in different years.
+- Can I import notes back into JW Library from PDF or Obsidian? Restore the merged .jwlibrary backup to bring notes back into JW Library. PDF and Obsidian exports are for reading and searching.
+- How much does Kovetz cost? Kovetz is free. Its source code is available under the MIT license.
+- Is Kovetz an official JW Library app? Kovetz is an independent program, not affiliated with JW Library or its developers.
+- Does Kovetz work on Android? Yes. There is an APK installer for Android (arm64), which fits almost all modern phones and tablets. Versions for Windows 10 and 11 and for Linux are available too.
+- Is this a replacement for JWLMerge? You can use it as an alternative. Its author says JWLMerge has been unmaintained since 2023 and does not cover the new JW Library database schema. Kovetz works with backups from older and newer versions and also exports your notes.
+- Who is Kovetz for? For anyone who uses JW Library: Jehovah's Witnesses, Bible students and other people who keep notes on more than one device.
+
+## Вопросы и ответы (Русский)
+- Как объединить заметки JW Library с телефона и планшета? Сделайте резервную копию в JW Library на каждом устройстве, перенесите файлы .jwlibrary на одно устройство, добавьте их в Kovetz и нажмите «Объединить». Готовую копию восстановите в JW Library.
+- Как перенести заметки JW Library на новый телефон? Сделайте резервную копию на старом телефоне и, если нужно, объедините её с копиями других устройств в Kovetz. Затем восстановите получившийся файл на новом телефоне.
+- Есть ли в JW Library официальная синхронизация заметок между устройствами? По справке на jw.org, заметки, теги, выделения и закладки между устройствами автоматически не синхронизируются. Резервную копию можно восстановить на другом устройстве, но она заменит его данные. Объединить копии помогает Kovetz.
+- Заметки пропали после восстановления резервной копии. Что делать? Восстановление в JW Library заменяет данные на устройстве. Если заметки сохранились в старых копиях, соберите их в одну с помощью Kovetz и восстановите объединённую копию.
+- Нужен ли интернет? Он нужен для скачивания программы и проверки обновлений по желанию. Объединение и экспорт работают без интернета.
+- Безопасно ли это для исходных копий? Kovetz сохраняет результат отдельным файлом, оставляя исходные копии без изменений. Перед восстановлением всё равно сделайте свежую копию устройства.
+- Что будет, если одна заметка изменена на двух устройствах? В объединённую копию попадёт более свежая версия, а вторая сохранится в отчёте.
+- Вернутся ли заметки, которые я удалял? Да, если удалённая заметка осталась в одной из копий, которые вы добавили для объединения.
+- Какие копии подходят? Подходят файлы .jwlibrary с разных устройств, в том числе копии, сделанные в разные годы.
+- Можно ли вернуть заметки в JW Library из PDF или Obsidian? Чтобы вернуть заметки в JW Library, восстановите объединённую копию .jwlibrary. Экспорт в PDF и Obsidian предназначен для чтения и поиска.
+- Сколько стоит Kovetz? Программа бесплатная. Исходный код доступен по лицензии MIT.
+- Это официальная программа JW Library? Kovetz — независимая программа, которая не связана с JW Library и её разработчиками.
+- Работает ли Kovetz на Android? Да. Для Android есть установочный файл APK (arm64), он подходит почти всем современным телефонам и планшетам. Также есть версии для Windows 10 и 11 и для Linux.
+- Это замена JWLMerge? Да, это можно использовать как альтернативу. По словам автора JWLMerge, проект не поддерживается с 2023 года и не рассчитан на новую схему базы JW Library. Kovetz работает с копиями старых и новых версий и умеет, кроме объединения, экспортировать заметки.
+- Для кого Kovetz? Для всех, кто пользуется JW Library: Свидетелей Иеговы, студентов Библии и других людей, у которых заметки хранятся на нескольких устройствах.

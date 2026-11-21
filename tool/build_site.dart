@@ -184,6 +184,7 @@ class SiteBuilder {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <title>${h(title)}</title>
   <meta name="description" content="${h(description)}">
   <link rel="canonical" href="${h(canonical ?? url)}">
@@ -275,13 +276,47 @@ $body
     );
   }
 
+  String _llms() {
+    final ru = readData('content/landing.ru.json');
+    final en = readData('content/landing.en.json');
+    String faq(GuideData data) => guideEntries(data['faq'] as GuideData, 'items')
+        .map((item) => '- ${item['question']} ${item['answer']}')
+        .join('\n');
+    return '''# $name
+
+> ${en['seo']['description']}
+
+$name is a free, open-source (MIT) app for people who use the JW Library app, including Jehovah's Witnesses. It merges `.jwlibrary` backups from several devices into one, never changes the original files, and exports notes to a PDF book or to Markdown for Obsidian. Runs offline on Android (arm64), Windows 10+ and Linux. Independent: not affiliated with JW Library or its developers. Author: $developer.
+
+## Pages
+- [English home]($base/en/): overview, downloads, FAQ
+- [English user guide]($base/en/guide/): step-by-step guide
+- [Русская главная]($base/ru/): обзор, скачивание, вопросы
+- [Русское руководство]($base/ru/guide/): пошаговое руководство
+- [Source code and releases](${config['repo']})
+
+## Facts
+- Version: $version (updated ${config['updated']})
+- Languages: Russian, English
+- Price: free, no ads, no account; internet only for an optional update check
+- Alternatives mentioned in the docs: JWLMerge (unmaintained since 2023), Library Merger (iOS/macOS), go-jwlm (command line), JWLManager
+
+## FAQ (English)
+${faq(en)}
+
+## Вопросы и ответы (Русский)
+${faq(ru)}
+''';
+  }
+
   void _indexFiles() {
     write('sitemap.xml', '''
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${_pages.entries.map((page) => '  <url>\n    <loc>${h(page.key)}</loc>\n${alternateTags(page.value, 'xhtml:link')}\n  </url>').join('\n')}
+${_pages.entries.map((page) => '  <url>\n    <loc>${h(page.key)}</loc>\n    <lastmod>${config['updated']}</lastmod>\n${alternateTags(page.value, 'xhtml:link')}\n  </url>').join('\n')}
 </urlset>
 ''');
+    write('llms.txt', _llms());
     write(
         'robots.txt', 'User-agent: *\nAllow: /\nSitemap: $base/sitemap.xml\n');
     write(
@@ -422,11 +457,29 @@ class LocalePages {
           '@context': 'https://schema.org',
           '@type': 'SoftwareApplication',
           'name': site.name,
+          'alternateName': 'Kovetz for JW Library',
           'description': copy['seo']['description'] as String,
-          'operatingSystem': _platforms.keys.join(', '),
+          'operatingSystem': 'Android 7.0+, Windows 10+, Linux',
           'applicationCategory': 'UtilitiesApplication',
+          'applicationSubCategory': 'JW Library backup merger and notes exporter',
           'softwareVersion': site.version,
-          'downloadUrl': site.releases,
+          'dateModified': site.config['updated']!,
+          'inLanguage': ['ru', 'en'],
+          'isAccessibleForFree': true,
+          'license': 'https://opensource.org/licenses/MIT',
+          'url': '${site.base}/$language/',
+          'image': '${site.base}/icon-512.png',
+          'screenshot': ['${site.base}/og.png'],
+          'keywords': copy['seo']['keywords'],
+          'downloadUrl': [
+            for (final file in _platforms.values)
+              '${site.archive}/download/v${site.version}/kovetz-${site.version}-$file',
+          ],
+          'sameAs': [site.config['repo']!],
+          'audience': {
+            '@type': 'PeopleAudience',
+            'audienceType': copy['audience']['title'],
+          },
           'offers': {'@type': 'Offer', 'price': 0, 'priceCurrency': 'EUR'},
           'author': {'@type': 'Person', 'name': site.developer},
         },
@@ -492,6 +545,12 @@ ${header()}
       </div>
     </div>
   </section>
+  <section id="audience" class="section">
+    <div class="container feature-callout">
+      <span class="icon-tile">${icon('heart')}</span>
+      <div><h2>${t('audience', 'title')}</h2><p>${t('audience', 'text')}</p><p><small>${t('audience', 'note')}</small></p></div>
+    </div>
+  </section>
   <section id="steps" class="section">
     <div class="container">
       <h2>${t('steps', 'title')}</h2>
@@ -512,6 +571,21 @@ ${header()}
     <div class="container">
       <h2>${t('export', 'title')}</h2>
       ${exportCards()}
+    </div>
+  </section>
+  <section id="compare" class="section band">
+    <div class="container">
+      <h2>${t('compare', 'title')}</h2>
+      <p>${t('compare', 'text')}</p>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead><tr>${(copy['compare']['head'] as List<dynamic>).map((cell) => '<th scope="col">${h(cell as String)}</th>').join()}</tr></thead>
+          <tbody>
+            ${(copy['compare']['rows'] as List<dynamic>).map((row) => '<tr>${(row as List<dynamic>).indexed.map((cell) => cell.$1 == 0 ? '<th scope="row">${h(cell.$2 as String)}</th>' : '<td>${h(cell.$2 as String)}</td>').join()}</tr>').join('\n            ')}
+          </tbody>
+        </table>
+      </div>
+      <p>${t('compare', 'note')}</p>
     </div>
   </section>
   <section id="privacy" class="section">

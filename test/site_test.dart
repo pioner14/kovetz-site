@@ -173,13 +173,13 @@ void main() {
       if (!const {'ru/', 'en/'}.contains(path)) continue;
       final software =
           objects.singleWhere((data) => data['@type'] == 'SoftwareApplication');
-      expect(software['operatingSystem'], 'Android, Windows, Linux');
+      expect(software['operatingSystem'], 'Android 7.0+, Windows 10+, Linux');
       expect(software['softwareVersion'], _config['version']);
       expect(software['offers']['price'], 0);
       expect(software['author']['name'], _config['developer']);
       final faq = objects.singleWhere((data) => data['@type'] == 'FAQPage');
-      expect(faq['mainEntity'], hasLength(9), reason: path);
-      expect(_tags(page, 'details'), hasLength(9), reason: path);
+      expect(faq['mainEntity'], hasLength(15), reason: path);
+      expect(_tags(page, 'details'), hasLength(15), reason: path);
       expect(_tags(page, 'img').where((tag) => tag['fetchpriority'] == 'high'),
           hasLength(1),
           reason: path);
@@ -218,7 +218,7 @@ void main() {
           _section.allMatches(html['ru/$suffix']!).map((match) => match[1]);
       final en =
           _section.allMatches(html['en/$suffix']!).map((match) => match[1]);
-      expect(ru, hasLength(suffix.isEmpty ? 12 : 11));
+      expect(ru, hasLength(suffix.isEmpty ? 14 : 11));
       expect(ru, orderedEquals(en));
     }
   });

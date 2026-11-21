@@ -352,3 +352,10 @@ small { font-size: .84rem; }
   .guide-layout :is(figure, .step, aside) { break-inside: avoid; }
   .step figure img { max-height: 126mm; }
 }
+
+.table-wrap { overflow-x: auto; margin-block: 1.2rem; border: 1px solid var(--line); border-radius: 1rem; }
+.compare { width: 100%; border-collapse: collapse; min-width: 34rem; font-size: .95rem; }
+.compare th, .compare td { padding: .75rem .9rem; text-align: start; vertical-align: top; border-block-end: 1px solid var(--line); }
+.compare thead th { background: var(--band); font-weight: 750; }
+.compare tbody tr:last-child th, .compare tbody tr:last-child td { border-block-end: 0; }
+.compare tbody tr:first-child { background: color-mix(in srgb, var(--accent) 8%, transparent); }
