@@ -85,7 +85,7 @@ class SiteBuilder {
       magick([
         '-background',
         'none',
-        'assets/brand/app_icon.svg',
+        'assets/brand/app_icon.png',
         '-resize',
         '${entry.value}x${entry.value}',
         '-depth',
