@@ -88,8 +88,12 @@ class SiteBuilder {
   }
 
   void _branding() {
-    for (final entry
-        in {'apple-touch-icon.png': 180, 'icon-512.png': 512}.entries) {
+    for (final entry in {
+      'apple-touch-icon.png': 180,
+      'icon-512.png': 512,
+      'favicon-192.png': 192,
+      'favicon-48.png': 48,
+    }.entries) {
       magick([
         '-background',
         'none',
@@ -102,6 +106,12 @@ class SiteBuilder {
         target(entry.key).path,
       ]);
     }
+    magick([
+      'assets/brand/app_icon.png',
+      '-define',
+      'icon:auto-resize=48,32,16',
+      target('favicon.ico').path,
+    ]);
     final seo = readData('content/landing.ru.json')['seo'] as GuideData;
     magick([
       '-size',
@@ -192,7 +202,9 @@ ${alternateTags(alternates, 'link')}
   <meta name="twitter:title" content="${h(title)}">
   <meta name="twitter:description" content="${h(description)}">
   <meta name="twitter:image" content="${h('$base/og.png')}">
-  <link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="${prefix}favicon.ico" sizes="48x48 32x32 16x16">
+  <link rel="icon" href="${prefix}favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="${prefix}favicon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="${prefix}apple-touch-icon.png">
   <link rel="manifest" href="${prefix}site.webmanifest">
   <link rel="stylesheet" href="${prefix}style.css">
