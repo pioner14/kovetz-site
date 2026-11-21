@@ -136,7 +136,8 @@
     "formats": [
       "APK for Android (arm64)",
       "Windows installer (EXE)",
-      "Single AppImage file"
+      "Single AppImage file",
+      "Zip for macOS (experimental)"
     ],
     "all": "All releases on GitHub",
     "note": "How to allow installation from your browser on Android"

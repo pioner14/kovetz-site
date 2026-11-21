@@ -2,7 +2,7 @@
 
 > Free app for JW Library users (Jehovah's Witnesses): merge backups from all your devices and export notes to PDF or Obsidian. Android, Windows, Linux.
 
-Kovetz is a free, open-source (MIT) app for people who use the JW Library app, including Jehovah's Witnesses. It merges `.jwlibrary` backups from several devices into one, never changes the original files, and exports notes to a PDF book or to Markdown for Obsidian. Runs offline on Android (arm64), Windows 10+ and Linux. Independent: not affiliated with JW Library or its developers. Author: Nikolai Golotaistrov.
+Kovetz is a free, open-source (MIT) app for people who use the JW Library app, including Jehovah's Witnesses. It merges `.jwlibrary` backups from several devices into one, never changes the original files, and exports notes to a PDF book or to Markdown for Obsidian. Runs offline on Android (arm64), Windows 10+, Linux and, experimentally, macOS 12+. Independent: not affiliated with JW Library or its developers. Author: Nikolai Golotaistrov.
 
 ## Pages
 - [English home](https://pioner14.github.io/kovetz-site/en/): overview, downloads, FAQ

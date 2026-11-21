@@ -173,7 +173,7 @@ void main() {
       if (!const {'ru/', 'en/'}.contains(path)) continue;
       final software =
           objects.singleWhere((data) => data['@type'] == 'SoftwareApplication');
-      expect(software['operatingSystem'], 'Android 7.0+, Windows 10+, Linux');
+      expect(software['operatingSystem'], 'Android 7.0+, Windows 10+, macOS 12+ (experimental), Linux');
       expect(software['softwareVersion'], _config['version']);
       expect(software['offers']['price'], 0);
       expect(software['author']['name'], _config['developer']);

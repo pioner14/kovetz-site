@@ -359,3 +359,5 @@ small { font-size: .84rem; }
 .compare thead th { background: var(--band); font-weight: 750; }
 .compare tbody tr:last-child th, .compare tbody tr:last-child td { border-block-end: 0; }
 .compare tbody tr:first-child { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+
+.platforms { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }

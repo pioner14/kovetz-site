@@ -10,6 +10,7 @@ const _platforms = {
   'Android': 'android-arm64.apk',
   'Windows': 'windows-x64-setup.exe',
   'Linux': 'linux-x86_64.AppImage',
+  'macOS': 'macos-universal.zip',
 };
 const _stepImages = ['merge_files_two', 'merge_rules', 'export_format'];
 
@@ -286,7 +287,7 @@ $body
 
 > ${en['seo']['description']}
 
-$name is a free, open-source (MIT) app for people who use the JW Library app, including Jehovah's Witnesses. It merges `.jwlibrary` backups from several devices into one, never changes the original files, and exports notes to a PDF book or to Markdown for Obsidian. Runs offline on Android (arm64), Windows 10+ and Linux. Independent: not affiliated with JW Library or its developers. Author: $developer.
+$name is a free, open-source (MIT) app for people who use the JW Library app, including Jehovah's Witnesses. It merges `.jwlibrary` backups from several devices into one, never changes the original files, and exports notes to a PDF book or to Markdown for Obsidian. Runs offline on Android (arm64), Windows 10+, Linux and, experimentally, macOS 12+. Independent: not affiliated with JW Library or its developers. Author: $developer.
 
 ## Pages
 - [English home]($base/en/): overview, downloads, FAQ
@@ -459,7 +460,7 @@ class LocalePages {
           'name': site.name,
           'alternateName': 'Kovetz for JW Library',
           'description': copy['seo']['description'] as String,
-          'operatingSystem': 'Android 7.0+, Windows 10+, Linux',
+          'operatingSystem': 'Android 7.0+, Windows 10+, macOS 12+ (experimental), Linux',
           'applicationCategory': 'UtilitiesApplication',
           'applicationSubCategory': 'JW Library backup merger and notes exporter',
           'softwareVersion': site.version,
@@ -810,6 +811,7 @@ String icon(String name) {
     'heart': 'M20 6c-2-2-6-2-8 1-2-3-6-3-8-1-3 4 2 8 8 13 6-5 11-9 8-13Z',
     'android': 'M4 16a8 8 0 0 1 16 0v3H4Zm3-9L5 4m12 3 2-3M8 14h.1m7.9 0h.1',
     'windows': 'M3 5l18-2v18L3 19V5Zm0 7h18M11 4v16',
+    'macos': 'M4 5h16v11H4ZM2 19h20M9 19l1-3h4l1 3',
     'linux':
         'M9 8h6m-8 5L4 17l2 3h12l2-3-3-4m-10 6v-8c0-4 2-7 5-7s5 3 5 7v8M10 11l2 2 2-2',
   };

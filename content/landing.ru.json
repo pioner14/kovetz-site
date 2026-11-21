@@ -136,7 +136,8 @@
     "formats": [
       "APK для Android (arm64)",
       "Установщик Windows (EXE)",
-      "Один файл AppImage"
+      "Один файл AppImage",
+      "Zip для macOS (экспериментально)"
     ],
     "all": "Все версии на GitHub",
     "note": "Как разрешить установку из браузера на Android"
