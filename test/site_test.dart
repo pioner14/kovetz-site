@@ -218,7 +218,7 @@ void main() {
           _section.allMatches(html['ru/$suffix']!).map((match) => match[1]);
       final en =
           _section.allMatches(html['en/$suffix']!).map((match) => match[1]);
-      expect(ru, hasLength(12));
+      expect(ru, hasLength(suffix.isEmpty ? 12 : 11));
       expect(ru, orderedEquals(en));
     }
   });
