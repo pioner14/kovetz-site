@@ -257,5 +257,10 @@
       ]
     ],
     "note": "If you use Android or Windows and also want your notes as a PDF or for Obsidian, Kovetz does it all in one app."
+  },
+  "beta": {
+    "title": "Looking for beta testers",
+    "text": "I want to publish Kovetz on Google Play, and that needs a group of Android testers. If you have an Android phone or tablet, use JW Library and can try the app for a couple of weeks, write to me on GitHub: open an Issue and briefly describe your device. I will reply and explain what to do next. You can also leave feedback and bug reports there.",
+    "action": "Write on GitHub"
   }
 }

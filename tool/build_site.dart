@@ -621,6 +621,17 @@ ${header()}
       </div>
     </div>
   </section>
+  <section id="beta" class="section">
+    <div class="container feature-callout">
+      <span class="icon-tile">${icon('heart')}</span>
+      <div>
+        <h2>${t('beta', 'title')}</h2><p>${t('beta', 'text')}</p>
+        <div class="actions">
+          <a class="button primary" href="${h(site.config['repo']!)}/issues/new">${t('beta', 'action')}</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="support" class="section band">
     <div class="container feature-callout">
       <span class="icon-tile">${icon('heart')}</span>
